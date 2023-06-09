@@ -1,0 +1,52 @@
+.container-banner{
+    background-image: url("../../assets//Home/BannerHomepage.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 407px;
+}
+
+.container-banner h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 40vh;
+    font-family: 'Calistoga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 83px;
+    color: #444444;
+}
+
+.container-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-content p{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #444444;
+}
+
+.container-content h6{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #444444;
+}

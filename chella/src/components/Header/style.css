@@ -1,0 +1,95 @@
+header{
+    display: flex;
+    background-color: #2E7BA2;
+    height: 128px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 120px;
+}
+
+.--bs-navbar-toggler-border-color{
+    color: red;
+}
+
+nav{
+    display: flex;
+    padding: 0px;
+    margin-top: -17px;
+    gap: 32px;
+    height: 40px;
+}
+
+ul{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 40px;
+    color: #fff;
+    gap: 32px;
+}
+
+@media(min-width: 330px) and (max-width: 768px){
+    header{
+        padding: 32px 24px
+    }
+
+    section{
+        position: absolute;
+        top: 60px;
+        right: 0px;
+        padding: 16px;
+    }
+    
+    span{
+        font-size: 25px;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 16px;
+        gap: 8px;  
+        position: relative;
+        width: 193px;
+        height: 243px;     
+        background: #2E7BA2;
+    }
+
+    li a{
+        position: relative;
+    }
+
+    li a::after{
+        content: '';
+        width: 0%;
+        height: 1px;
+        background-color: #fff;
+        color: #fff;
+        position: absolute;
+        top: 30px;
+        bottom: 0;
+        left: 0;
+        transition: 0.3s ease-in-out;
+    }
+
+    li a:hover::after{
+        width: 100%;
+    }
+
+
+}
+
+@media(min-width: 768px ) and (max-width: 1440px){
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 32px 60px;
+        gap: 32px;
+        height: 200px;
+    }
+
+}
