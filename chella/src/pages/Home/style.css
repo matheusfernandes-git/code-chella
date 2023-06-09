@@ -1,9 +1,14 @@
 .container-banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 23px 417px;
+    height: 384px;
     background-image: url("../../assets//Home/BannerHomepage.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 407px;
 }
 
 .container-banner h1{
@@ -21,10 +26,51 @@
     color: #444444;
 }
 
+.container-about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 64px 120px;
+}
+
 .container-content{
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 48px;
+}
+
+.container-content div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+    width: 540px;
+    height: 340px;
+}
+
+.container-button button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 16px;
+    width: 256px;
+    height: 56px;
+    background: #2E7BA2;
+    box-shadow: 4px 4px 0px #444444;
+    border-radius: 16px;
+    color: #fff;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 40px;
 }
 
 .container-content p{
@@ -49,4 +95,162 @@
     align-items: center;
     text-align: center;
     color: #444444;
+}
+
+.container-lineUp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 120px;
+    gap: 32px;
+}
+
+.container-lineUp h1{
+    text-align: center;
+    font-family: 'Calistoga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 83px;
+    color: #444444;
+}
+
+.container-line-up-d1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 56px 120px;
+    gap: 48px;
+}
+
+.day1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 10px;
+    width: 417px;
+    height: 94px;
+    background: #DF9010;
+}
+
+.day1 h3{
+    font-family: 'Calistoga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 62px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.container-data1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+}
+
+.container-musics{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+}
+
+.container-music-title{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 48px;
+}
+
+.container-music-title h2{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 56px;
+    display: flex;
+    align-items: center;
+    color: #444444;
+}
+
+.musics{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+}
+
+@media(min-width: 330px) and (max-width: 768px) {
+
+    .container-banner{
+        padding: 0px;
+        height: 270px;
+    }
+
+    .container-banner h1{
+        padding: 27px 200px;
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    .about-img{
+        width: 430px;
+        height: 381px;
+    }
+
+    .container-about{
+        flex-direction: column;
+        justify-content: center;
+        padding: 32px 24px;
+    }
+
+    .container-content{
+        flex-direction: column;
+        gap: 32px;
+        width: 312px;
+        height: 911px;
+    }
+
+    .container-content div{
+        width: 312px;
+        height: 498px;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 1440px){
+
+    .container-banner{
+        padding: 0px;
+    }
+    
+    .container-about{
+        padding: 32px 60px;
+    }
+
+    .container-content{
+        flex-direction: column;
+        gap: 32px;
+        width: 648px;
+        height: 753px;
+    }
+
+    .container-content h6{
+        width: 392px;
+        height: 76px;
+    }
+
 }

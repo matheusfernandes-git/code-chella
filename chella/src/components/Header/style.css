@@ -35,12 +35,12 @@ ul{
         padding: 32px 24px
     }
 
-    section{
+    /* section{
         position: absolute;
         top: 60px;
         right: 0px;
         padding: 16px;
-    }
+    } */
     
     span{
         font-size: 25px;
