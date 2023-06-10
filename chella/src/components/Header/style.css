@@ -21,13 +21,17 @@ nav{
 }
 
 ul{
+    gap: 32px;
+}
+
+ul .links{
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
     line-height: 40px;
+    font-size: 20px;
+    text-decoration: none;
     color: #fff;
-    gap: 32px;
 }
 
 @media(min-width: 330px) and (max-width: 768px){

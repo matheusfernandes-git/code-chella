@@ -2,7 +2,7 @@ export const Links = [
   {
     name: "A experiência",
     id: 1,
-    to: "/experiência",
+    to: "/experiencia",
   },
   {
     name: "Mapa de Setores",
@@ -12,7 +12,7 @@ export const Links = [
   {
     name: "Informações",
     id: 3,
-    to: "/informações",
+    to: "/informacoes",
   },
   {
     name: "Ingresso",

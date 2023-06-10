@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logo from "../../assets/logo1.png";
 import { Links } from "./Links/index";
 import "./style.css";
@@ -20,7 +21,7 @@ export default function Header() {
               {Links.map((link) => {
                 return (
                   <li key={link.id}>
-                    <a to={link.to}>{link.name}</a>
+                    <Link className="links" to={link.to}>{link.name}</Link>
                   </li>
                 );
               })}

@@ -1,17 +1,19 @@
 import AboutImg from "../../assets/Home/Imagemhomepage1.png";
 import ingressoIcon from "../../assets/Home/íconeIngresso.png";
+import Banner from "../../components/Banner/index";
+import BannerImg from "../../assets//Home/BannerHomepage.png";
+import { row1 } from "./lineUpSaturdayRow1/index";
+import { row2 } from "./lineUpSaturdayRow2/index";
+import { row3 } from "./lineUpSaturdayRow3/index";
 import "./style.css";
 
 export default function Home() {
   return (
     <section>
-      <div className="container-banner">
-        <h1>Boas-vindas ao #CodeChella2023!</h1>
-      </div>
+      <Banner src={BannerImg} title={"Boas-vindas ao #CodeChella2023!"} />
       <section className="container-about">
         <div className="container-content">
           <img className="about-img" src={AboutImg} alt="imagem" />
-
           <div>
             <h6>11 e 12 de Março Aluródromo de São Paulo</h6>
             <p>
@@ -28,10 +30,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <div className="container-lineUp">
+        <h1>/Line-Up/</h1>
+      </div>
       <section className="container-line-up-d1">
-        <div className="container-lineUp">
-          <h1>/Line-Up/</h1>
-        </div>
         <div className="container-data1">
           <div className="day1">
             <h3>SÁBADO 11/03</h3>
@@ -41,16 +43,20 @@ export default function Home() {
           <div className="container-music-title">
             <h2>System of a DOM</h2>
           </div>
-          <div className="musics">
-            <div>
-              <h5>Python Maiden</h5>
-              <h5>Python Maiden</h5>
-              <h5>Python Maiden</h5>
-              <h5>Python Maiden</h5>
-            </div>
-            <div></div>
-            <div></div>
-            <div></div>
+          <div className="container-r1">
+            {row1.map((music) => {
+              return <h5>{music.name}</h5>;
+            })}
+          </div>
+          <div className="container-r2">
+            {row2.map((music) => {
+              return <h6>{music.name}</h6>;
+            })}
+          </div>
+          <div className="container-r3">
+            {row3.map((music) => {
+              return <h4>{music.name}</h4>;
+            })}
           </div>
         </div>
       </section>
