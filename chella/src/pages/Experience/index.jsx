@@ -3,7 +3,7 @@ import Banner from "../../components/Banner";
 import BannerImg from "../../assets/Experience/BannerExperiência.png";
 import Aimg from "../../assets/Experience/Experiência1.png";
 import Simg from "../../assets/Experience/Experiência2.png";
-import Atimg from '../../assets/Experience/Experiência3.png';
+import Atimg from "../../assets/Experience/Experiência3.png";
 
 export default function Experience() {
   return (
@@ -45,7 +45,11 @@ export default function Experience() {
           <div className="container-attractions-text">
             <h6>Atrações</h6>
             <p>
-            Intervenções artísticas e culturais para todos os gostos! Durante os intervalos dos shows, nossa experiência contará com recreação para crianças, oficina de cerâmica, origami, circo e aquarela! Além disso, nosso espaço contra com 3 praças de alimentação, roda gigante e outros brinquedos!
+              Intervenções artísticas e culturais para todos os gostos! Durante
+              os intervalos dos shows, nossa experiência contará com recreação
+              para crianças, oficina de cerâmica, origami, circo e aquarela!
+              Além disso, nosso espaço contra com 3 praças de alimentação, roda
+              gigante e outros brinquedos!
             </p>
           </div>
         </div>
