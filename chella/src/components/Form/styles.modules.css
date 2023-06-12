@@ -1,0 +1,37 @@
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+}
+
+.container-smallers-inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+    width: 795px;
+    height: 106px;
+}
+
+@media(min-width: 330px) and (max-width: 768px){
+    .container-smallers-inputs{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        width: 312px;
+        height: 250px;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 1440px){
+    .container-smallers-inputs{
+        width: 648px;
+        height: 106px;
+        flex-direction: column;
+    }
+}
+

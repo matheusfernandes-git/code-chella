@@ -1,0 +1,23 @@
+.container-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 120px;
+    gap: 48px;
+}
+
+@media(min-width: 330px) and (max-width: 768px){
+    .container-form{
+        padding: 48px 60px;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 1440px){
+    .container-form{
+        padding: 32px 24px;
+        /* width: 360px;
+        height: 822px; */
+    }
+}
+
+

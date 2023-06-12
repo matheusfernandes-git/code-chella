@@ -1,0 +1,47 @@
+.fild{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    gap: 8px;
+}
+
+label{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+input{
+    border: none;
+    width: 795px;
+    height: 48px;
+}
+
+@media(min-width: 330px) and (max-width: 768px){
+    .fild{
+        align-items: flex-start;
+        gap: 8px;
+        width: 312px;
+        height: 94px;
+    }
+
+    input{
+        width: 312px;
+        height: 48px;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 1440px){
+    .fild{
+        align-items: flex-start;
+        /* width: 648px;
+        height: 94px; */
+    }
+
+    input{
+        width: 648px;
+        height: 48px;
+    }
+}

@@ -1,0 +1,25 @@
+.container-date{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height: 102px;
+}
+
+.container-date input{
+    width: 385.5px;
+    height: 60px;
+}
+
+@media(min-width: 330px) and (max-width: 768px){
+    .container-date{
+        justify-content: center;
+        align-items: flex-start;
+        width: 312px;
+        height: 140px;
+    }
+
+    .container-date input{
+        width: 312px;
+        height: 56px;
+    }
+}

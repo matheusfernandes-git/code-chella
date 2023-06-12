@@ -1,0 +1,41 @@
+.container-dropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height: 102px;
+}
+
+select{
+    display: flex;
+    border: none;
+    width: 385.5px;
+    height: 60px;
+}
+
+@media(min-width: 330px) and (max-width: 1440px){
+    .container-dropdown{
+        flex-direction: column;
+    }
+
+    select{
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 10px;
+        gap: 10px;
+        width: 312px;
+        height: 60px;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 1440px){
+
+    .container-dropdown{
+        align-items: center;
+        justify-content: center;
+    }
+
+    select{
+        width: 648px;
+        height: 106px;
+    }
+}
