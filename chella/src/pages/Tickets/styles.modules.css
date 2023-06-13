@@ -13,10 +13,16 @@
 }
 
 @media(min-width: 768px) and (max-width: 1440px){
+    .container-ticket{
+        margin-bottom: 130px;
+    }
+
     .container-form{
-        padding: 32px 24px;
-        /* width: 360px;
-        height: 822px; */
+        padding: 48px 60px;
+    }
+    
+    .container-form h3{
+        width: 648px;
     }
 }
 

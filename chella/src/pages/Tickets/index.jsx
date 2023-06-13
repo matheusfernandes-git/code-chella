@@ -5,7 +5,7 @@ import "./styles.modules.css";
 
 export default function Tickets() {
   return (
-    <section>
+    <section className="container-ticket">
       <Banner src={TicketBanner} title={"Garanta seu Ingresso"} />
       <section className="container-form">
         <h3>Preencha o formulário a seguir:</h3>

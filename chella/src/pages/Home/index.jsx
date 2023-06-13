@@ -2,10 +2,9 @@ import AboutImg from "../../assets/Home/Imagemhomepage1.png";
 import ingressoIcon from "../../assets/Home/íconeIngresso.png";
 import Banner from "../../components/Banner/index";
 import BannerImg from "../../assets//Home/BannerHomepage.png";
-import { row1 } from "./lineUpSaturdayRow1/index";
-import { row2 } from "./lineUpSaturdayRow2/index";
-import { row3 } from "./lineUpSaturdayRow3/index";
+import imgParty from "../../assets/Home/party-img.png";
 import "./style.css";
+import LineUps from "../../components/LineUps";
 
 export default function Home() {
   return (
@@ -33,32 +32,8 @@ export default function Home() {
       <div className="container-lineUp">
         <h1>/Line-Up/</h1>
       </div>
-      <section className="container-line-up-d1">
-        <div className="container-data1">
-          <div className="day1">
-            <h3>SÁBADO 11/03</h3>
-          </div>
-        </div>
-        <div className="container-musics">
-          <div className="container-music-title">
-            <h2>System of a DOM</h2>
-          </div>
-          <div className="container-r1">
-            {row1.map((music) => {
-              return <h5>{music.name}</h5>;
-            })}
-          </div>
-          <div className="container-r2">
-            {row2.map((music) => {
-              return <h6>{music.name}</h6>;
-            })}
-          </div>
-          <div className="container-r3">
-            {row3.map((music) => {
-              return <h4>{music.name}</h4>;
-            })}
-          </div>
-        </div>
+      <LineUps day={"SABADO 11/06"} />
+      <section className="container-party">
       </section>
     </section>
   );

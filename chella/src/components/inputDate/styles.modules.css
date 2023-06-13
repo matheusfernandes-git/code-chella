@@ -23,3 +23,11 @@
         height: 56px;
     }
 }
+
+@media (min-width: 768px) and (max-width: 1440px){
+    .container-date{
+        margin-top: 10px;
+        width: 648px;
+        height: 102px;
+    }
+}

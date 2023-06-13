@@ -97,18 +97,6 @@
     gap: 48px;
 }
 
-.day1 h3{
-    font-family: 'Calistoga';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 62px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #FFFFFF;
-}
-
 .container-data1{
     display: flex;
     flex-direction: row;
@@ -118,11 +106,9 @@
     gap: 32px;
 }
 
-.day1{
+.data1{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
     align-items: flex-start;
     padding: 16px;
     gap: 10px;
@@ -131,57 +117,37 @@
     background: #DF9010;
 }
 
+.data1 h3{
+    color: #FFFFFF;
+}
+
 .container-musics{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px;
     gap: 32px;
 }
 
-.container-music-title{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 48px;
-}
-
-.container-music-title h2{
+.container-musics h2{
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 800;
     font-size: 48px;
     line-height: 56px;
-    display: flex;
-    align-items: center;
     color: #444444;
 }
 
-.container-r1, .container-r2, .container-r3{
+.container-lineUp ul{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 0px;
     gap: 32px;
-}
-
-.container-r1{
     width: 1157px;
     height: 47px;
 }
 
-.container-r2{
-    width: 1051px;
-    height: 38px;
-}
-
-.container-r3{
-    width: 773px;
-    height: 38px;
-}
-
-.container-r1 h5, .container-r2 h6, .container-r3 h4{
+.ul-row1, .ul-row2, .ul-row3{
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -192,13 +158,21 @@
     color: #444444;
 }
 
-.container-r2 h6{
+.ul-row2{
     font-size: 32px;
     line-height: 38px;
 }
 
-.container-r3 h4{
+.ul-row3{
     font-weight: 500;
+}
+
+.container-party{
+    background-image: url('../../assets/Home/party-img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    mix-blend-mode: multiply;
 }
 
 @media(min-width: 330px) and (max-width: 768px) {
