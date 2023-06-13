@@ -4,11 +4,7 @@ import map from "../../assets/Setores/mapa-setores1.png";
 import PistaImg from "../../assets/Setores/festa.png";
 import PremiumImg from "../../assets/Setores/festa2.png";
 import ArqImg from "../../assets/Setores/arquibancadas.png";
-import blueRet from "../../assets/Setores/blue-rectangle.png";
-import pinkRet from "../../assets/Setores/pink-rectangle.png";
-import cianoRet from "../../assets/Setores/ciano-rectangle.png";
-import purpleRet from "../../assets/Setores/purple-rectangle.png";
-import lightblueRet from "../../assets/Setores/lightblue-rectangle.png";
+import { SubtitleList } from "./subtitleList";
 import "./style.css";
 
 export default function Sectors() {
@@ -21,26 +17,11 @@ export default function Sectors() {
           <div className="container-subtitle">
             <h6>Legenda:</h6>
             <ul className="list-unstyled">
-              <li>
-                <img src={blueRet} alt="retangulo azul" />
-                Pista Premium
-              </li>
-              <li>
-                <img src={pinkRet} alt="retangulo rosa" />
-                Pista Comum
-              </li>
-              <li>
-                <img src={cianoRet} alt="retangulo ciano" />
-                Cadeiras térreo
-              </li>
-              <li>
-                <img src={purpleRet} alt="retangulo roxo" />
-                Cadeiras superiores
-              </li>
-              <li>
-                <img src={lightblueRet} alt="retangulo azul claro" />
-                Rampas
-              </li>
+              {SubtitleList.map(item => {
+                return(
+                  <li><img src={item.img}/>{item.name}</li>
+                )
+              })}
             </ul>
           </div>
         </div>
