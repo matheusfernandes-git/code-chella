@@ -1,10 +1,16 @@
+import "./style.css";
 import AboutImg from "../../assets/Home/Imagemhomepage1.png";
-import ingressoIcon from "../../assets/Home/íconeIngresso.png";
+import TicketIcon from "../../assets/Home/íconeIngresso.png";
 import Banner from "../../components/Banner/index";
 import BannerImg from "../../assets//Home/BannerHomepage.png";
-import imgParty from "../../assets/Home/party-img.png";
-import "./style.css";
 import LineUps from "../../components/LineUps";
+import { row1 } from "./lineUpSaturdayRow1";
+import { row2 } from "./lineUpSaturdayRow2";
+import { row3 } from "./lineUpSaturdayRow3";
+import { sundayRow1 } from "./lineUpSundayRow1";
+import { sundayRow2 } from "./lineUpSundayRow2";
+import { sundayRow3 } from "./lineUpSundayRow3";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -22,9 +28,9 @@ export default function Home() {
               Divirta-se!
             </p>
             <div className="container-button">
-              <button>
-                Comprar ingresso! <img src={ingressoIcon} alt="iIcon" />
-              </button>
+              <Link to={"/ingresso"} className="ticket-btn">
+                Comprar ingresso <img src={TicketIcon} alt="iIcon" />
+              </Link>
             </div>
           </div>
         </div>
@@ -32,9 +38,21 @@ export default function Home() {
       <div className="container-lineUp">
         <h1>/Line-Up/</h1>
       </div>
-      <LineUps day={"SABADO 11/06"} />
-      <section className="container-party">
-      </section>
+      <LineUps
+        day={"<SABADO 11/06>"}
+        title={"System of a DOM"}
+        row1={row1}
+        row2={row2}
+        row3={row3}
+      />
+      <LineUps
+        day={"<DOMINGO 12/06>"}
+        title={"Lana Del Ploy"}
+        row1={sundayRow1}
+        row2={sundayRow2}
+        row3={sundayRow3}
+      />
+      <section className="container-party"></section>
     </section>
   );
 }

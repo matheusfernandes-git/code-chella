@@ -1,36 +1,34 @@
-import MusicsList from "../MusicsList";
-import { row1 } from "./lineUpSaturdayRow1";
-import { row2 } from "./lineUpSaturdayRow2";
-import { row3 } from "./lineUpSaturdayRow3";
-import { sundayRow1 } from "./lineUpSundayRow1";
-import { sundayRow2 } from "./lineUpSundayRow2";
-import { sundayRow3 } from "./lineUpSundayRow3";
-import "./style.module.css";
+import "./style.css";
 
-export default function LineUps({ day, title }) {
+export default function LineUps({ day, title, row1, row2, row3 }) {
   return (
-    <section className="container-line-up-d1">
-      <div className="container-data1">
-        <div className="data1">
+    <section className="container-line-up">
+      <div className="container-data">
+        <hr />
+        <div className="data">
           <h3>{day}</h3>
         </div>
+        <hr />
       </div>
       <div className="container-musics">
         <div className="container-music-title">
           <h2>{title}</h2>
         </div>
-        <MusicsList row1={row1} row2={row2} row3={row3} />
-      </div>
-      <div className="container-data1">
-        <div className="data1">
-          <h3>{day}</h3>
-        </div>
-      </div>
-      <div className="container-musics">
-        <div className="container-music-title">
-          <h2>{title}</h2>
-        </div>
-        <MusicsList row1={sundayRow1} row2={sundayRow2} row3={sundayRow3} />
+        <ul className="ul-row1">
+          {row1.map((musics) => {
+            return <li>{musics.name}</li>;
+          })}
+        </ul>
+        <ul className="ul-row2">
+          {row2.map((musics) => {
+            return <li>{musics.name}</li>;
+          })}
+        </ul>
+        <ul className="ul-row3">
+          {row3.map((musics) => {
+            return <li>{musics.name}</li>;
+          })}
+        </ul>
       </div>
     </section>
   );

@@ -1,0 +1,159 @@
+.container-line-up{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 56px 120px;
+    gap: 48px;
+}
+
+.container-data{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+}
+
+hr{
+    width: 359.5px;
+    height: 0px;
+    border: 1px solid #DF9010;
+}
+
+.data{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 10px;
+    width: 417px;
+    height: 94px;
+    background: #DF9010;
+}
+
+.data h3{
+    font-size: 43px;
+    line-height: 62px;
+    color: #FFFFFF;
+}
+
+.container-musics{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.container-musics h2{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 56px;
+    color: #444444;
+}
+
+.ul-row1, .ul-row2, .ul-row3{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    display: flex;
+    align-items: center;
+    color: #444444;
+}
+
+.ul-row2, .ul-row3{
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.ul-row3{
+    font-weight: 500;
+}
+
+.container-party{
+    background-image: url('../../assets/Home/party-img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    mix-blend-mode: multiply;
+}
+
+@media(min-width: 330px) and (max-width: 768px){
+    hr{
+        display: none;
+    }
+
+    .container-line-up{
+        padding: 48px 24px;
+    }
+
+    .data{
+        justify-content: center;
+        width: 289px;
+        height: 74px;
+    }
+
+    .data h3{
+        font-size: 29px;
+        line-height: 42px;
+    }
+
+    .container-musics{
+        height: 900px;
+    }
+
+    .container-musics ul{
+        gap: 16px;
+        flex-direction: column;
+        background: none;
+        width: 320px;
+        height: 157px;
+    }
+
+    .ul-row1{
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .ul-row2{
+        font-size: 31px;
+        margin: 70px;
+    }
+
+    .container-musics ul li{
+        display: flex;
+        justify-content: center;
+        height: 110px;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 1440px){
+    hr{
+        width: 83.5px;
+    }
+
+    .container-line-up{
+        padding: 48px 60px;
+    }
+
+    .container-musics{
+        width: 700px;
+    }
+
+    .container-musics ul {  
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .ul-row1{
+        font-size: 39.7px;
+        line-height: 47px;
+    }
+    
+}
