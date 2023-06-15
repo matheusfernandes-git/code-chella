@@ -1,5 +1,6 @@
 import "./style.css";
 import AboutImg from "../../assets/Home/Imagemhomepage1.png";
+import mobileImg from '../../assets/Home/mobile/img1-home-mobile.png';
 import TicketIcon from "../../assets/Home/íconeIngresso.png";
 import Banner from "../../components/Banner/index";
 import BannerImg from "../../assets//Home/BannerHomepage.png";
@@ -18,7 +19,11 @@ export default function Home() {
       <Banner src={BannerImg} title={"Boas-vindas ao #CodeChella2023!"} />
       <section className="container-about">
         <div className="container-content">
-          <img className="about-img" src={AboutImg} alt="imagem" />
+          <picture>
+            <source className="mobile-img" srcSet={mobileImg} media="(max-width: 768px)" />
+            {/* <source srcSet="" media="" /> */}
+            <img className="about-img" src={AboutImg} alt="imagem" />
+          </picture>
           <div>
             <h6>11 e 12 de Março Aluródromo de São Paulo</h6>
             <p>

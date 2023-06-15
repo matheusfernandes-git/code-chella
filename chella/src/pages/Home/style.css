@@ -109,11 +109,6 @@
         line-height: 42px;
     }
 
-    .about-img{
-        width: 430px;
-        height: 381px;
-    }
-
     .container-about{
         flex-direction: column;
         justify-content: center;

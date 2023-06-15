@@ -5,7 +5,6 @@ header{
     display: flex;
     background-color: #2E7BA2;
     height: 128px;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 32px 120px;
@@ -32,6 +31,7 @@ nav{
 }
 
 ul{
+    display: flex;
     gap: 32px;
 }
 
@@ -39,39 +39,57 @@ ul .links{
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
-    line-height: 40px;
+    line-height: 50px;
     font-size: 20px;
     text-decoration: none;
     color: #fff;
 }
 
-@media(min-width: 330px) and (max-width: 768px){
+li a{
+    position: relative;
+}
+
+.li-links a::after{
+    content: '';
+    width: 0%;
+    height: 1px;
+    background-color: #fff;
+    color: #fff;
+    position: absolute;
+    top: 30px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
+}
+
+li a:hover::after{
+    width: 100%;
+}
+
+@media(min-width: 330px) and (max-width: 767px){
     header{
         padding: 32px 24px
     }
 
-    header img{
+    .logo-link{
         z-index: 100;
     }
     
-    span{
-        font-size: 25px;
+    .closed-menu{
+        display: flex;
+        flex-direction: column;
+        z-index: 1000;
+        position: fixed ; 
+        width: 100%;
+        top: 0;
+        left: 100%;
+        transition: 850ms;
     }
 
     .show-menu{
         position: absolute;
-        top: 0;
         left: 0%;
         transition: 400ms;
-    }
-
-    .closed-menu{
-        display: flex;
-        flex-direction: column;
-        position: fixed ; 
-        top: 0;
-        left: 100%;
-        transition: 850ms;
     }
 
     .open-menu{
@@ -82,10 +100,9 @@ ul .links{
     .menu-itens{
         display: flex;
         flex-direction: column;
-        padding: 16px;
         position: fixed;
+        top: 0;
         width: 100%;
-        gap: 8px;  
         height: 600px;     
         background-color: #2E7BA2;
     }
@@ -94,8 +111,8 @@ ul .links{
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
+        margin-right: 20px;
         cursor: pointer;
-        margin: 13px;
     }
 
     .li-links{
@@ -104,36 +121,18 @@ ul .links{
         justify-content: center;
     }
     
-
     .menu-itens li{
         display: flex;
         margin-top: 50px;
     }
 
-    li a{
-        position: relative;
-    }
-
     li a::after{
-        content: '';
-        width: 0%;
-        height: 1px;
-        background-color: #fff;
-        color: #fff;
-        position: absolute;
-        top: 30px;
-        bottom: 0;
-        left: 0;
-        transition: 0.3s ease-in-out;
+        margin-top: 15px;
     }
 
-    li a:hover::after{
-        width: 100%;
-    }
-    
 }
 
-@media(min-width: 768px ) and (max-width: 1440px){
+@media(min-width: 767px ) and (max-width: 1440px){
     header{
         flex-direction: column;
         padding: 32px 60px;

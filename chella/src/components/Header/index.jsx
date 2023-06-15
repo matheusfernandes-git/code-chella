@@ -8,21 +8,24 @@ import { useState } from "react";
 
 export default function Header() {
   const [toogleMenu, setToogleMenu] = useState(false);
-
-  const showMenu = () => {
-    setToogleMenu(!toogleMenu);
-  };
+  const showMenu = () => setToogleMenu(!toogleMenu);
 
   return (
     <header>
-      <img src={logo} alt="logo" />
+      <Link className="logo-link" to={"/"}>
+        <img src={logo} alt="logo" />
+      </Link>
       <div className="open-menu">
-        <AiOutlineMenu onClick={showMenu} size={40} color="#fff" />
+        <Link to="#">
+          <AiOutlineMenu onClick={showMenu} size={40} color="#fff" />
+        </Link>
       </div>
       <nav className={toogleMenu ? "show-menu" : "closed-menu"}>
-        <ul className="menu-itens">
+        <ul className="menu-itens" onClick={showMenu} >
           <li className="close-menu">
-            <AiOutlineClose size={40} color="#fff" onClick={showMenu} />
+            <Link to="#">
+              <AiOutlineClose size={40} color="#fff" />
+            </Link>
           </li>
           {Links.map((link) => {
             return (

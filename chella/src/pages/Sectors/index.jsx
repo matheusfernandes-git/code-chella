@@ -1,9 +1,13 @@
 import Banner from "../../components/Banner/index";
 import SetoresBanner from "../../assets/Setores/banner-setores.png";
 import map from "../../assets/Setores/mapa-setores1.png";
+import mobileMap from "../../assets/Setores/mobile/mapa-mobile.png";
 import PistaImg from "../../assets/Setores/festa.png";
+import pistaMobile from "../../assets/Setores/mobile/mapa2-mobile.png";
 import PremiumImg from "../../assets/Setores/festa2.png";
+import premiumMobile from "../../assets/Setores/mobile/mapa3-mobile.png";
 import ArqImg from "../../assets/Setores/arquibancadas.png";
+import arqMobile from "../../assets/Setores/mobile/mapa4-mobile.png";
 import { SubtitleList } from "./subtitleList";
 import "./style.css";
 
@@ -13,14 +17,20 @@ export default function Sectors() {
       <Banner src={SetoresBanner} title={"Mapa de Setores"} />
       <section className="container-map">
         <div className="container-setores-content">
-          <img src={map} alt="mapa de setores" />
+          <picture>
+            <source srcSet={mobileMap} media="(max-width: 768px)" />
+            <img src={map} alt="mapa de setores" />
+          </picture>
           <div className="container-subtitle">
             <h6>Legenda:</h6>
             <ul className="list-unstyled">
-              {SubtitleList.map(item => {
-                return(
-                  <li><img src={item.img}/>{item.name}</li>
-                )
+              {SubtitleList.map((item) => {
+                return (
+                  <li>
+                    <img src={item.img} />
+                    {item.name}
+                  </li>
+                );
               })}
             </ul>
           </div>
@@ -30,7 +40,10 @@ export default function Sectors() {
         <h5>Mais detalhes sobre os setores:</h5>
         <div className="container-details-content">
           <div>
-            <img src={PistaImg} alt="mulher em uma festa" />
+            <picture>
+              <source srcSet={pistaMobile} media="(max-width: 768px)" />
+              <img src={PistaImg} alt="mulher em uma festa" />
+            </picture>
             <h6>Pista</h6>
             <p>
               Pista convencional, atendida pelos bares e banheiros das laterais
@@ -40,7 +53,10 @@ export default function Sectors() {
           </div>
           <div className="container-premium">
             <div className="div-extra"></div>
-            <img src={PremiumImg} alt="festa colorida" />
+            <picture>
+              <source srcSet={premiumMobile} media="(max-width: 768px)" />
+              <img src={PremiumImg} alt="festa colorida" />
+            </picture>
             <h6>Pista Premium</h6>
             <p>
               Pista mais próxima do palco, com acesso muito próximo a banheiros
@@ -49,7 +65,10 @@ export default function Sectors() {
             </p>
           </div>
           <div className="container-arq">
+          <picture>
+            <source srcSet={arqMobile} media="(max-width: 768px)" />
             <img src={ArqImg} alt="arquibancada" />
+          </picture>
             <h6>Cadeiras</h6>
             <p>
               Opção de cadeiras térreas ou elevadas. Acesso próximo a banheiros

@@ -1,0 +1,103 @@
+.container-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-text{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.container-text h6{
+    font-weight: 700;
+}
+
+.container-text p{
+    text-align: start;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
+    color: #444444;
+}
+
+.sustentability-img{
+    order: 1;
+}
+
+#container-sustentability{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    order: 0;
+}
+
+#container-sustentability p{
+    text-align: right;
+}
+
+
+@media(min-width: 330px) and (max-width: 768px){
+    .container-content{
+        text-align: center;
+        flex-direction: column;
+        gap: 32px;
+        height: 771px;
+    }
+
+    .container-text p{
+        text-align: center;
+    }
+
+    .sustentability-img{
+        margin-top: 60px;
+        order: 0;
+    }
+
+    #container-sustentability{
+        margin-bottom: -100px;
+        align-items: center;
+        justify-content: center;
+        order: 1;
+    }
+    
+    #container-sustentability p{
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1440px){
+    .container-content{
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 32px;
+    }
+    
+    .container-text{
+        text-align: center;
+    }
+
+    .container-text h6{
+        justify-content: center;
+    }
+
+    .container-text p{
+        text-align: center;
+    }
+
+    .sustentability-img{
+        order: 0;
+    }
+
+    #container-sustentability{
+        align-items: center;
+        justify-content: center;
+        order: 1;
+    }
+
+    #container-sustentability p{
+        text-align: center;
+    }
+
+}
