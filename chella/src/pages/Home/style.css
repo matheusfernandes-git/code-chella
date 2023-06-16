@@ -11,23 +11,27 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 0px;
     gap: 48px;
 }
 
-.container-content div{
+.container-about-text{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px;
     gap: 24px;
-    width: 540px;
-    height: 340px;
+}
+
+.container-about-text h6{
+    width: 392px;
+}
+
+.container-about-text p{
+    text-align: center;
+    width: 540px
 }
 
 .ticket-btn{
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 8px 16px;
@@ -57,9 +61,6 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 40px;
-    display: flex;
-    align-items: center;
-    text-align: center;
     color: #444444;
 }
 
@@ -94,12 +95,8 @@
     color: #444444;
 }
 
-
-
-@media(min-width: 330px) and (max-width: 768px) {
-
+@media(max-width: 768px) {
     .container-banner{
-        padding: 0px;
         height: 270px;
     }
 
@@ -112,43 +109,45 @@
     .container-about{
         flex-direction: column;
         justify-content: center;
-        padding: 32px 24px;
+        padding: 32px 24px; 
     }
 
     .container-content{
         flex-direction: column;
         gap: 32px;
-        width: 312px;
-        height: 911px;
+        margin-top: 40px;
+        margin-bottom: 80px;
     }
 
-    .container-content div{
+    .container-about-text h6, .container-about-text p{
         width: 312px;
-        height: 498px;
     }
 
     .container-lineUp h1{
         font-size: 48px;
         line-height: 62px;
-    }
+        width: 223px;
+    } 
 
 }
 
 @media(min-width: 768px) and (max-width: 1440px){
-    .container-about{
-        padding: 32px 60px;
-    }
-
     .container-content{
         flex-direction: column;
         gap: 32px;
-        width: 648px;
-        height: 753px;
     }
 
     .container-content h6{
         width: 392px;
         height: 76px;
     }
+
+    .container-content div p{
+        width: 648px;
+    }
+
+    .container-lineUp h1{
+        width: 297px;
+    } 
 
 }

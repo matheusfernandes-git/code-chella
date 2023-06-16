@@ -1,7 +1,7 @@
-import DropdownTicket from "../../components/DropdownTicket/index";
-import DateInput from "../../components/inputDate/index";
-import Input from "../../components/Input/index";
-import "./styles.modules.css";
+import DropdownTicket from "components/DropdownTicket/index";
+import DateInput from "components/inputDate/index";
+import Input from "components/Input/index";
+import "./style.css";
 
 export default function Form() {
   return (

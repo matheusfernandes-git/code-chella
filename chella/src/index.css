@@ -1,12 +1,11 @@
 *{
   padding: 0px;
   margin: 0px;
-  scroll-behavior: smooth;
 }
 
 body {
-  margin: 0;
   background: linear-gradient(180deg, #BFDAE6 0%, #FCF0DD 50%, #FACF9D 100%);
+  overflow-x: hidden;
 }
 
 ul{

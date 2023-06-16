@@ -6,24 +6,17 @@
     gap: 48px;
 }
 
-@media(min-width: 330px) and (max-width: 768px){
+@media(max-width: 768px){
     .container-form{
         padding: 48px 60px;
     }
 }
 
-@media(min-width: 768px) and (max-width: 1440px){
-    .container-ticket{
-        margin-bottom: 130px;
-    }
-
+@media(max-width: 1440px){
     .container-form{
         padding: 48px 60px;
     }
-    
-    .container-form h3{
-        width: 648px;
-    }
+
 }
 
 

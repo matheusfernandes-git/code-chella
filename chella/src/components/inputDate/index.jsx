@@ -1,4 +1,4 @@
-import './styles.modules.css';
+import './style.css';
 
 export default function inputDate({ label, value }) {
   return (

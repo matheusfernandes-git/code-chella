@@ -1,8 +1,8 @@
 import "./style.css";
 import ExperienceSection from "./ExperienceSections";
-import ExpericenceJson from "./experience.json";
-import Banner from "../../components/Banner/index";
-import bannerImg from "../../assets/Experience/banner.png";
+import ExpericenceJson from "./ExperienceSections/experience.json";
+import Banner from "components/Banner/index";
+import bannerImg from "assets/Experience/banner.png";
 
 export default function Experience() {
   return (

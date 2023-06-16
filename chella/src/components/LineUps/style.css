@@ -84,7 +84,7 @@ hr{
     mix-blend-mode: multiply;
 }
 
-@media(min-width: 330px) and (max-width: 768px){
+@media(max-width: 768px){
     hr{
         display: none;
     }
@@ -143,7 +143,7 @@ hr{
     }
 
     .container-musics{
-        width: 700px;
+        width: 650px;
     }
 
     .container-musics ul {  
@@ -152,7 +152,7 @@ hr{
     }
 
     .ul-row1{
-        font-size: 39.7px;
+        font-size: 39px;
         line-height: 47px;
     }
     

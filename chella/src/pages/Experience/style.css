@@ -6,16 +6,10 @@
     padding: 64px 120px;
 }
 
-
-@media(min-width: 230px) and (max-width: 1440px){
+@media(max-width: 768px){
     .container-sections{
-        padding: 32px 24px;
+        margin-top: 40px;
+        padding: 0px 24px;
         height: 1073px;
     }
-}
-
-@media(min-width: 768px) and (max-width: 1440px){
-    /* .container-sections{
-        padding: 200px 120px;
-    } */
 }

@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "sum": "Quais serão as atrações?",
+        "text": " Teremos dois dias de shows, o primeiro (11/03) com bandas de rock, e o segundo (12/03) com bandas pop. Confira o line-up em detalhes clicando neste link!"
+    },
+    {
+        "id": 2,
+        "sum": "Qual é a classificação etária?",
+        "text": "A idade mínima para entrar no festival é a partir de 16 anos, sem restrição de idade máxima!"
+    },
+    {
+        "id": 3,
+        "sum": "Quais serão os setores disponíveis?",
+        "text": "Teremos a pista premium, comum, cadeiras no térreo, cadeiras superiores e as rampas. O espaço será muito grande para que você não se preocupe em ficar sem assentos!"
+    },
+    {
+        "id": 3,
+        "sum": "Quais serão os itens proibidos?",
+        "text": "É proibido a entrada com qualquer tipo de objetos cortantes ou itens perigosos. Será feita uma revista na entrada para certificarmos que ninguém se machuque dentro do festival!"
+    }
+]

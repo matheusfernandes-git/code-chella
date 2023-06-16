@@ -1,8 +1,8 @@
-import blueRet from "../../../assets/Setores/blue-rectangle.png";
-import pinkRet from "../../../assets/Setores/pink-rectangle.png";
-import cianoRet from "../../../assets/Setores/ciano-rectangle.png";
-import purpleRet from "../../../assets/Setores/purple-rectangle.png";
-import lightblueRet from "../../../assets/Setores/lightblue-rectangle.png";
+import blueRet from "assets/Setores/blue-rectangle.png";
+import pinkRet from "assets/Setores/pink-rectangle.png";
+import cianoRet from "assets/Setores/ciano-rectangle.png";
+import purpleRet from "assets/Setores/purple-rectangle.png";
+import lightblueRet from "assets/Setores/lightblue-rectangle.png";
 
 export const SubtitleList = [
   {

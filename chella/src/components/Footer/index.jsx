@@ -1,9 +1,9 @@
 import "./style.css";
-import FooterLogo from "../../assets/FooterLogo.png";
-import wpp from "../../assets/wpp-icon.png";
-import tw from "../../assets/tw-icon.png";
-import insta from "../../assets/insta-icon.png";
-import tt from "../../assets/tt-icon.png";
+import FooterLogo from "assets/FooterLogo.png";
+import wpp from "assets/wpp-icon.png";
+import tw from "assets/tw-icon.png";
+import insta from "assets/insta-icon.png";
+import tt from "assets/tt-icon.png";
 
 export default function Footer() {
   return (

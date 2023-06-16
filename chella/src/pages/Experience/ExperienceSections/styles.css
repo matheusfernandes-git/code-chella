@@ -6,15 +6,19 @@
 
 .container-text{
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     gap: 24px;
 }
 
 .container-text h6{
+    display: flex;
     font-weight: 700;
 }
 
 .container-text p{
+    width: 650px;
     text-align: start;
     font-weight: 500;
     font-size: 20px;
@@ -38,15 +42,15 @@
 }
 
 
-@media(min-width: 330px) and (max-width: 768px){
+@media(max-width: 768px){
     .container-content{
         text-align: center;
         flex-direction: column;
-        gap: 32px;
         height: 771px;
     }
 
     .container-text p{
+        width: 312px;
         text-align: center;
     }
 
@@ -56,7 +60,6 @@
     }
 
     #container-sustentability{
-        margin-bottom: -100px;
         align-items: center;
         justify-content: center;
         order: 1;

@@ -1,7 +1,7 @@
-import Banner from "../../components/Banner";
-import Form from "../../components/Form/index";
-import TicketBanner from "../../assets/Tickets/ingresso-banner.png";
-import "./styles.modules.css";
+import Banner from "components/Banner";
+import Form from "components/Form/index";
+import TicketBanner from "assets/Tickets/ingresso-banner.png";
+import "./style.css";
 
 export default function Tickets() {
   return (
