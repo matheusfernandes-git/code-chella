@@ -18,7 +18,7 @@ export default function Home() {
     <>
       <Banner src={BannerImg} title={"Boas-vindas ao #CodeChella2023!"} />
       <section className="container container-about">
-        <section className="mt-5 mb-5">
+        <section className="container mt-5 mb-5">
           <div className="container-content">
             <picture>
               <source
@@ -37,7 +37,7 @@ export default function Home() {
                 Divirta-se!
               </p>
               <div className="container-button">
-                <Button to={"/ingresso"} img={TicketIcon}>
+                <Button to={"/formulario"} img={TicketIcon}>
                   Comprar ingresso
                 </Button>
               </div>

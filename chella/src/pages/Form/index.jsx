@@ -7,10 +7,9 @@ import Input from "components/Input";
 import DateInput from "components/inputDate/index";
 import DropdownTicket from "components/DropdownTicket";
 import { createContext, useState } from "react";
-import InfoList from "../Ticket/InfoList";
 import Ticket from "../Ticket";
 
-export const ContextoTeste = createContext();
+export const Contexto = createContext("");
 export default function Form() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -20,32 +19,15 @@ export default function Form() {
   const whenSave = (event) => {
     event.preventDefault();
 
-    // window.location.href = '/ingresso';
-
-    <ContextoTeste.Provider value={{ name, ticket }}>
-      <div>
-        <Ticket />
-      </div>
-    </ContextoTeste.Provider>;
+    <Contexto.Provider value={{ name, ticket }}>
+      <Ticket />
+    </Contexto.Provider>;
+    window.location.href = "/ingresso";
 
     setName("");
     setEmail("");
     setTicket("");
     setBirth("");
-  };
-
-  const teste = () => {
-    const ul = document.createElement("ul");
-    ul.classList.add("infos");
-    const h6 = document.createElement("h6");
-    h6.innerHTML += name;
-    ul.innerHTML += `
-      <li>${ticket}</li>
-      <li>Data: 11/03</li>
-      <li>Local: São Paulo-SP</li>
-    `;
-
-    console.log(ul);
   };
 
   return (
@@ -79,11 +61,12 @@ export default function Form() {
             />
           </div>
           <div className="container-form-btn">
-            <Button to={"#"} img={FormIcon}>
+            <Button type={"submit"} to={"/ingresso"} img={FormIcon}>
               Avançar
             </Button>
           </div>
         </form>
+        ;
       </section>
     </section>
   );

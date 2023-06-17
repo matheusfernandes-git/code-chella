@@ -5,11 +5,10 @@ import logoExtra from "assets/Ticket/logoextra.png";
 import QrCode from "assets/Ticket/QrCode.png";
 import "./style.css";
 import { useContext } from "react";
-import { ContextoTeste } from "../Form";
+import { Contexto } from "../Form";
 
-export default function Ticket(props) {
-
-  const {name, ticket} = useContext(ContextoTeste);
+export default function Ticket() {
+  const { name, ticket } = useContext(Contexto);
 
   return (
     <>
@@ -27,7 +26,16 @@ export default function Ticket(props) {
             </div>
             <div className="ticket">
               <img src={QrCode} alt="qrcode do ingresso" />
-              <div className="container-ticket-infos"></div>
+              <div className="container-ticket-infos">
+                <h6>{name}</h6>
+                <div className="infos">
+                  <ul>
+                    <li>{ticket}</li>
+                    <li>Data: 11/03</li>
+                    <li>Local: São Paulo-SP</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
