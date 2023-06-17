@@ -5,7 +5,7 @@ export default function InfoList({ name, ticket }) {
       <div className="infos">
         <ul>
           <li>{ticket}</li>
-          <li></li>
+          <li>Setor Pista</li>
           <li>Data: 11/03</li>
           <li>Local: São Paulo-SP</li>
         </ul>

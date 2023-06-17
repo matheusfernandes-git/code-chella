@@ -8,21 +8,22 @@ import DateInput from "components/inputDate/index";
 import DropdownTicket from "components/DropdownTicket";
 import { createContext, useState } from "react";
 import Ticket from "../Ticket";
+import { useNavigate } from "react-router-dom";
 
-export const Contexto = createContext("");
-export default function Form() {
+export default function Form({ onAddClient }) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [ticket, setTicket] = useState("");
   const [birth, setBirth] = useState("");
+  const navigate = useNavigate();
 
   const whenSave = (event) => {
     event.preventDefault();
 
-    <Contexto.Provider value={{ name, ticket }}>
-      <Ticket />
-    </Contexto.Provider>;
-    window.location.href = "/ingresso";
+    const data = { name, ticket };
+    onAddClient(data);
+
+    navigate("/ingresso");
 
     setName("");
     setEmail("");
@@ -61,12 +62,11 @@ export default function Form() {
             />
           </div>
           <div className="container-form-btn">
-            <Button type={"submit"} to={"/ingresso"} img={FormIcon}>
+            <Button type={"submit"} img={FormIcon}>
               Avançar
             </Button>
           </div>
         </form>
-        ;
       </section>
     </section>
   );

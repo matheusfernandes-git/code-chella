@@ -7,7 +7,7 @@
     height: 586px;
 }
 
-.container-ticket-content h6{
+.container-ticket h6{
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 32px;
@@ -18,7 +18,7 @@
     color: #444444;
 }
 
-.container-ticket-content{
+.container-ticket{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -27,7 +27,7 @@
     height: 458px
 }
 
-.container-ticket{
+.container-ticket-content{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -51,30 +51,152 @@
 
 .ticket{
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 48px;
     height: 222px;
 }
 
-.container-ticket-infos{    
+.infos{    
     display: flex;
+    align-items: center;
+    padding-left: 25px;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 24px;
-    width: 202px;
-    height: 222px;
 }
 
-.infos{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 32px;
-    width: 187px;
-    height: 160px;
+.infos h6{
+    margin-right: 20px;
+    line-height: 38px;
 }
 
 .infos ul{
+    margin-top: 30px;
     flex-direction: column;
+    height: 10px;
+}
+
+.infos ul li{
+    line-height: 5px;
+}
+
+@media(min-width: 280px) and (max-width: 768px){
+    .container{
+        justify-content: center;
+        padding: 64px 24px;
+        height: 914px;
+    }
+
+    .container-ticket{
+        width: 312px;
+        height: 786px;
+    }
+
+    .container-ticket-content{
+        align-items: center;
+        width: 312px;
+        height: 564px;
+    }
+
+    .container-logo {
+        width: 248px;
+    }
+
+    .ticket{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        width: 584px;
+        height: 556px;
+    }
+
+    .infos{
+        align-items: center;
+        padding: 0px;
+        gap: 16px;
+        width: 248px;
+        height: 214px;
+    }
+
+    .infos h6{
+        font-size: 32px;
+        line-height: 38px;
+    }
+    
+    .infos ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 16px;
+        margin-top: 0px;
+        width: 187px;
+        height: 160px;
+    }
+    
+    .infos ul li{
+        font-size: 20px;
+        line-height: 26px;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 1440px){
+    .container{
+        justify-content: center;
+        gap: 32px;
+        height: 958px;
+    }
+
+    .container-ticket{
+        width: 768px;
+        height: 958px;
+    }
+
+    .container-ticket-content{
+        align-items: flex-start;
+        width: 648px;
+        height: 684px;
+    }
+
+    .container-logo {
+        width: 584px;
+    }
+
+    .ticket{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        width: 584px;
+        height: 556px;
+    }
+
+    .infos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 16px;
+        width: 370px;
+        height: 214px;
+    }
+
+    .infos h6{
+        font-size: 32px;
+        line-height: 38px;
+    }
+    
+    .infos ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 16px;
+        margin-top: 0px;
+        width: 187px;
+        height: 160px;
+    }
+    
+    .infos ul li{
+        font-size: 20px;
+        line-height: 26px;
+    }
 }
