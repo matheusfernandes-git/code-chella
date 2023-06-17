@@ -11,7 +11,7 @@ import { row3 } from "./lineUpSaturdayRow3";
 import { sundayRow1 } from "./lineUpSundayRow1";
 import { sundayRow2 } from "./lineUpSundayRow2";
 import { sundayRow3 } from "./lineUpSundayRow3";
-import { Link } from "react-router-dom";
+import Button from "components/Button";
 
 export default function Home() {
   return (
@@ -37,9 +37,9 @@ export default function Home() {
                 Divirta-se!
               </p>
               <div className="container-button">
-                <Link to={"/ingresso"} className="ticket-btn">
-                  Comprar ingresso <img src={TicketIcon} alt="iIcon" />
-                </Link>
+                <Button to={"/ingresso"} img={TicketIcon}>
+                  Comprar ingresso
+                </Button>
               </div>
             </div>
           </div>
@@ -62,7 +62,7 @@ export default function Home() {
           row3={sundayRow3}
         />
       </section>
-        <section className="container-party"></section>
+      <section className="container-party"></section>
     </>
   );
 }

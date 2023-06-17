@@ -1,0 +1,80 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 120px;
+    gap: 48px;
+    height: 586px;
+}
+
+.container-ticket-content h6{
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #444444;
+}
+
+.container-ticket-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 32px;
+    height: 458px
+}
+
+.container-ticket{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 32px;
+    gap: 32px;
+    width: 792px;
+    height: 350px;
+    background: linear-gradient(180deg, #BFDAE6 0%, #FCF0DD 50%, #FACF9D 100%);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.container-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 728px;
+    height: 32px;
+}
+
+.ticket{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 48px;
+    height: 222px;
+}
+
+.container-ticket-infos{    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    width: 202px;
+    height: 222px;
+}
+
+.infos{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 32px;
+    width: 187px;
+    height: 160px;
+}
+
+.infos ul{
+    flex-direction: column;
+}

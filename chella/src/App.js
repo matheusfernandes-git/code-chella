@@ -5,7 +5,8 @@ import Experience from "./pages/Experience";
 import Footer from "./components/Footer";
 import Setores from "./pages/Sectors";
 import Informations from "./pages/Informations";
-import Tickets from "./pages/Tickets";
+import Form from "./pages/Form/index";
+import Ticket from 'pages/Ticket/index';
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
         <Route path="/experiencia" element={<Experience />} />
         <Route path="/setores" element={<Setores />} />
         <Route path="/informacoes" element={<Informations />} />
-        <Route path="/ingresso" element={<Tickets />} />
+        <Route path="/formulario" element={<Form />} />
+        <Route path="/ingresso" element={<Ticket />} />
       </Routes>
       <Footer />
     </BrowserRouter>

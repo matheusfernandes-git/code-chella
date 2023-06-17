@@ -6,7 +6,7 @@
     padding: 64px 120px;
 }
 
-@media(max-width: 768px){
+@media (min-width: 330px) and (max-width: 768px){
     .container-sections{
         margin-top: 40px;
         padding: 0px 24px;

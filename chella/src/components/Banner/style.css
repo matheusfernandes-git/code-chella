@@ -21,7 +21,7 @@
     color: #444444;
 }
 
-@media(min-width: 330px) and (max-width: 768px) {
+@media(min-width: 320px) and (max-width: 768px){
     .container-banner{
         padding: 0px;
         height: 270px;

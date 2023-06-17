@@ -17,6 +17,6 @@ export const Links = [
   {
     name: "Ingresso",
     id: 4,
-    to: "/ingresso",
+    to: "/formulario",
   },
 ];

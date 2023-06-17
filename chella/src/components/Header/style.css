@@ -59,7 +59,7 @@ li a:hover::after{
     width: 100%;
 }
 
-@media(min-width: 280px) and (max-width: 768px){
+@media(max-width: 768px){
     header{
         padding: 32px 24px
     }
