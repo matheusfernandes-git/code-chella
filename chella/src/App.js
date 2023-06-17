@@ -9,7 +9,8 @@ import Form from "./pages/Form/index";
 import Ticket from 'pages/Ticket/index';
 import { useState } from "react";
 
-function App() {
+
+export default function App() {
   const [list, setList] = useState([]);
 
   function handleClient(client){
@@ -33,5 +34,3 @@ function App() {
     </BrowserRouter>
   );
 }
-
-export default App;
