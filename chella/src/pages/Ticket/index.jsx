@@ -3,7 +3,8 @@ import TicketBanner from "assets/Ticket/banner.png";
 import logo from "assets/Ticket/logo.png";
 import logoExtra from "assets/Ticket/logoextra.png";
 import QrCode from "assets/Ticket/QrCode.png";
-import QrCodeBigger from 'assets/Ticket/Qr code 1.png';
+import QrCodeBigger from "assets/Ticket/Qr code 1.png";
+import QrCodeMobile from "assets/Ticket/QrcodeMobile.png";
 import "./style.css";
 import InfoList from "./InfoList";
 
@@ -24,28 +25,22 @@ export default function Ticket({ list }) {
             </div>
             <div className="ticket">
               <picture>
-                <source srcSet={QrCodeBigger} media="(max-width: 1440px)"/>
-              <img src={QrCode} alt="qrcode do ingresso" />
+                <source srcSet={QrCodeMobile} media="(max-width: 768px)" />
+                <source srcSet={QrCodeBigger} media="(max-width: 1440px)" />
+                <img src={QrCode} alt="qrcode do ingresso" />
               </picture>
               <div className="container-ticket-infos">
                 <div className="infos">
-                  <h6>Messi</h6>
-                  <ul>
-                    <li>Ingresso cortesia</li>
-                    <li>Setor Pista</li>
-                    <li>Data: 11/03</li>
-                    <li>Local: São Paulo-SP</li>
-                  </ul>
+                  {list.map((client, index) => {
+                    return (
+                      <InfoList
+                        key={index}
+                        name={client.name}
+                        ticket={client.ticket}
+                      />
+                    );
+                  })}
                 </div>
-                {/* {list.map((user, index) => {
-                  return (
-                    <InfoList
-                      key={index}
-                      name={user.name}
-                      ticket={user.ticket}
-                    />
-                  );
-                })} */}
               </div>
             </div>
           </div>

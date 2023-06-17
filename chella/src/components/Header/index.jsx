@@ -21,16 +21,16 @@ export default function Header() {
         </Link>
       </div>
       <nav className={toogleMenu ? "show-menu" : "closed-menu"}>
-        <ul className="menu-itens" onClick={showMenu} >
+        <ul className="menu-itens" onClick={showMenu}>
           <li className="close-menu">
             <Link to="#">
               <AiOutlineClose size={40} color="#fff" />
             </Link>
           </li>
-          {Links.map((link) => {
+          {Links.map((link, index) => {
             return (
               <li className="li-links" key={link.id}>
-                <Link className="links" to={link.to}>
+                <Link key={index} className="links" to={link.to}>
                   {link.name}
                 </Link>
               </li>

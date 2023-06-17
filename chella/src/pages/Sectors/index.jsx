@@ -20,9 +20,9 @@ export default function Sectors() {
           <div className="container-subtitle">
             <h6>Legenda:</h6>
             <ul>
-              {SubtitleList.map((item) => {
+              {SubtitleList.map((item, index) => {
                 return (
-                  <li>
+                  <li key={index}>
                     <img src={item.img} />
                     {item.name}
                   </li>
@@ -35,10 +35,15 @@ export default function Sectors() {
       <section className="container-details">
         <h5>Mais detalhes sobre os setores:</h5>
         <div className="container-details-content">
-          {Details.map((div) => {
+          {Details.map((div, index) => {
             return (
               <>
-                <DetailsSections title={div.title} text={div.text} id={div.id} />
+                <DetailsSections
+                  key={index}
+                  title={div.title}
+                  text={div.text}
+                  id={div.id}
+                />
               </>
             );
           })}

@@ -6,8 +6,7 @@ import Button from "components/Button";
 import Input from "components/Input";
 import DateInput from "components/inputDate/index";
 import DropdownTicket from "components/DropdownTicket";
-import { createContext, useState } from "react";
-import Ticket from "../Ticket";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function Form({ onAddClient }) {

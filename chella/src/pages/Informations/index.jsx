@@ -11,10 +11,10 @@ export default function Informations() {
       <section className="container-infos">
         <h3>Perguntas Frequentes:</h3>
         <div className="container-questions">
-          {contentQuestions.map((question) => {
+          {contentQuestions.map((question, index) => {
             return (
               <div>
-                <Questions title={question.sum} text={question.text} />
+                <Questions key={index} title={question.sum} text={question.text} />
               </div>
             );
           })}

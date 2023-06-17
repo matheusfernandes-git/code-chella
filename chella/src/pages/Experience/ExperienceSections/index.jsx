@@ -1,6 +1,12 @@
 import "./styles.css";
 
-export default function ExperienceSection({ title, text, id, idtext, imgSust }) {
+export default function ExperienceSection({
+  title,
+  text,
+  id,
+  idtext,
+  imgSust,
+}) {
   return (
     <div className="container-content">
       <picture className={imgSust}>

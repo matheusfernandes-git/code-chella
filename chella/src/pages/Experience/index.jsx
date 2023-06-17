@@ -8,10 +8,11 @@ export default function Experience() {
   return (
     <>
       <Banner src={bannerImg} title={"A Experiência"} />
-      {ExpericenceJson.map((experience) => {
+      {ExpericenceJson.map((experience, index) => {
         return (
           <section className="container-sections">
             <ExperienceSection
+              key={index}
               id={experience.id}
               title={experience.title}
               text={experience.text}

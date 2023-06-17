@@ -8,7 +8,12 @@ export default function Input(props) {
   return (
     <div className="fild">
       <label>{props.label}</label>
-      <input type={props.type} value={props.value} onChange={whenTyped} required />
+      <input
+        type={props.type}
+        value={props.value}
+        onChange={whenTyped}
+        required
+      />
     </div>
   );
 }

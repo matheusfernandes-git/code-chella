@@ -7,7 +7,7 @@ export default function Banner({ src, title }) {
       style={{
         background: `url(${src})`,
         backgroundRepeat: "no-repeat",
-        backgroundSize: 'cover',
+        backgroundSize: "cover",
       }}
     >
       <h1>{title}</h1>
