@@ -6,6 +6,12 @@
     padding: 64px 120px;
 }
 
+@media(max-width: 465px){
+    .container-sections{
+        width: 175vw;
+    }
+}
+
 @media(max-width: 768px){
     .container-sections{
         margin-top: 40px;

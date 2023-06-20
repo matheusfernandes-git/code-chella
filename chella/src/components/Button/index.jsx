@@ -4,9 +4,9 @@ import "./style.css";
 export default function Button({ to, children, img, type }) {
   return (
     <button type={type} className="btn">
-      <a href={to}>
+      <Link to={to} className="link">
         {children} <img src={img} />
-      </a>
+      </Link>
     </button>
   );
 }

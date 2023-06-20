@@ -70,9 +70,10 @@
     color: #444444;
 }
 
-@media screen and (max-width: 340px){
-    .container-about{
-        width: 380px;
+@media(max-width: 465px){
+    .container-about,
+    .container-party{
+        width: 175vw;
     }
 }
 

@@ -25,6 +25,13 @@ form{
     gap: 48px;
 }
 
+@media(max-width: 465px){
+    .container-ticket-form{
+        width: 175vw;
+        margin-bottom: 120px;
+    }
+}
+
 @media(max-width: 768px){
     .container-ticket-form{
         padding: 48px 60px;

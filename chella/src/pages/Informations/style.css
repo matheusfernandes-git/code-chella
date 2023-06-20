@@ -25,6 +25,13 @@ h3{
     color: #444444;
 }
 
+@media(max-width: 465px){
+    .container-infos{
+        width: 175vw;
+        margin-bottom: 130px;
+    }
+}
+
 @media(max-width: 768px){
     .container-infos{
         padding: 48px 24px;

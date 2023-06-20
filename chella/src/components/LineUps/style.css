@@ -85,9 +85,9 @@ hr{
     mix-blend-mode: multiply;
 }
 
-@media screen and (max-width: 340px){
-    .container-musics{
-        width: 380px;
+@media(max-width: 465px){
+    .container-line-up{
+        width: 175vw;
     }
 }
 

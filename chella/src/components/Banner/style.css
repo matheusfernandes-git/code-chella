@@ -21,7 +21,7 @@
     color: #444444;
 }
 
-@media(max-width: 400px){
+@media(max-width: 465px){
     .container-banner{
         width: 175vw;
     }

@@ -10,16 +10,20 @@
     box-shadow: 4px 4px 0px #444444;
     text-decoration: none;
     border-radius: 16px;
-    color: #fff;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 40px;
 }
 
 .btn:hover{
     color: #fff;
     background: #519EC5;
     box-shadow: 4px 4px 0px #000000;
+}
+
+.btn .link{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 40px;
+    color: #fff;
+    text-decoration: none;
 }

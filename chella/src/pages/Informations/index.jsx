@@ -14,7 +14,11 @@ export default function Informations() {
           {contentQuestions.map((question, index) => {
             return (
               <div>
-                <Questions key={index} title={question.sum} text={question.text} />
+                <Questions
+                  key={index}
+                  title={question.sum}
+                  text={question.text}
+                />
               </div>
             );
           })}
