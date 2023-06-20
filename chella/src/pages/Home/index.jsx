@@ -17,8 +17,8 @@ export default function Home() {
   return (
     <>
       <Banner src={BannerImg} title={"Boas-vindas ao #CodeChella2023!"} />
-      <section className="container container-about">
-        <section className="container mt-5 mb-5">
+      <section className="container-about">
+        <section className="container mt-3 mb-3">
           <div className="container-content">
             <picture>
               <source

@@ -21,7 +21,13 @@
     color: #444444;
 }
 
-@media(min-width: 320px) and (max-width: 768px){
+@media(max-width: 400px){
+    .container-banner{
+        width: 175vw;
+    }
+}
+
+@media(max-width: 768px){
     .container-banner{
         padding: 0px;
         height: 270px;
@@ -34,7 +40,7 @@
     }
 }
 
-@media(min-width: 768px) and (max-width: 1440px){
+@media(max-width: 1024px){
      .container-banner{
         padding: 0px;
     }

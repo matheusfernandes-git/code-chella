@@ -12,7 +12,7 @@ select{
     height: 60px;
 }
 
-@media(min-width: 330px) and (max-width: 1440px){
+@media(max-width: 768px){
     .container-dropdown{
         flex-direction: column;
     }

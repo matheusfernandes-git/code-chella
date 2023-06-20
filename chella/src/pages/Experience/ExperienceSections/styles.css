@@ -41,12 +41,18 @@
     text-align: right;
 }
 
+@media(max-width: 400px){
+    .container-content{
+        margin: auto;
+    }
+}
+
 
 @media(max-width: 768px){
     .container-content{
         text-align: center;
         flex-direction: column;
-        height: 771px;
+        height: 771vh;
     }
 
     .container-text p{

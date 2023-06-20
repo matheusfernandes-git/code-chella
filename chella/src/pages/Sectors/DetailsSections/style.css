@@ -22,12 +22,6 @@
     line-height: 40px;
 }
 
-/* .container-details-content .blue{
-    width: 32px;
-    height: 32px;
-    background: #0E7DF1
-} */
-
 .div-extra{
     margin: 15px;
 }
@@ -39,7 +33,12 @@
     padding: 0px;
     gap: 24px;
     width: 383px;
-    height: 525px;
+}
+
+@media screen and (max-width: 340px){
+    .container-details-content p{
+        width: 340px;
+    }   
 }
 
 @media(max-width: 768px){
@@ -54,7 +53,6 @@
     }
 
     .container-details-content div{
-        width: 100%;
         height: 100vh;
     }
 }

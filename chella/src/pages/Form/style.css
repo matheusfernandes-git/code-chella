@@ -39,7 +39,7 @@ form{
     }
 }
 
-@media(min-width: 758px) and (max-width: 1440px){
+@media(min-width: 768px) and (max-width: 1440px){
     .container-ticket-form{
         padding: 48px 60px;
     }

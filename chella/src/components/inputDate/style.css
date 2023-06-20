@@ -10,7 +10,7 @@
     height: 60px;
 }
 
-@media(min-width: 330px) and (max-width: 768px){
+@media(max-width: 768px){
     .container-date{
         justify-content: center;
         align-items: flex-start;

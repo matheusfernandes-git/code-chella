@@ -17,7 +17,7 @@ details p{
     background: #C8DEEF;
 }
 
-@media(min-width: 330px) and (max-width: 768px){
+@media(max-width: 768px){
     summary{
         width: 350px;
         height: 130px;

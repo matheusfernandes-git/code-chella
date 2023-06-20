@@ -59,6 +59,12 @@ li a:hover::after{
     width: 100%;
 }
 
+@media(max-width: 400px){
+    header{
+        width: 175vw;
+    }
+}
+
 @media(max-width: 768px){
     header{
         padding: 32px 24px
@@ -96,7 +102,7 @@ li a:hover::after{
         position: fixed;
         top: 0;
         width: 100%;
-        height: 600px;     
+        height: 600vh;     
         background-color: #2E7BA2;
     }
 

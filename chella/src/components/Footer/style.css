@@ -39,7 +39,13 @@ footer{
     height: 80px;
 }
 
-@media(min-width: 330px) and (max-width: 768px){
+@media(max-width: 400px){
+    footer{
+        width: 175vw;
+    }
+}
+
+@media(max-width: 768px){
     footer{
         text-align: center;
         flex-direction: column;

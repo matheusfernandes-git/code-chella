@@ -19,7 +19,7 @@ input{
     height: 48px;
 }
 
-@media(min-width: 330px) and (max-width: 768px){
+@media(max-width: 768px){
     .fild{
         align-items: flex-start;
         gap: 8px;

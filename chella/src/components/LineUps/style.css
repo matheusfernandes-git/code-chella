@@ -48,6 +48,7 @@ hr{
 }
 
 .container-musics h2{
+    text-align: center;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 800;
@@ -84,12 +85,40 @@ hr{
     mix-blend-mode: multiply;
 }
 
+@media screen and (max-width: 340px){
+    .container-musics{
+        width: 380px;
+    }
+}
+
+@media(min-width: 767px) and (max-width: 768px){
+    .container-line-up{
+        padding: 48px 60px;
+    }
+
+    .container-musics{
+        width: 650px;
+    }
+
+    .container-musics ul {  
+        width: 500px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .ul-row1{
+        font-size: 39px;
+        line-height: 47px;
+    }
+}
+
 @media(max-width: 768px){
     hr{
         display: none;
     }
 
     .container-line-up{
+        width: 100%;
         padding: 48px 24px;
     }
 
@@ -108,6 +137,11 @@ hr{
         height: 900px;
     }
 
+    .container-musics h2{
+        font-size: 2.7em;
+        width: 100%;
+    }
+
     .container-musics ul{
         gap: 16px;
         flex-direction: column;
@@ -117,13 +151,17 @@ hr{
     }
 
     .ul-row1{
-        font-size: 36px;
+        font-size: 2em;
         line-height: 42px;
     }
 
     .ul-row2{
-        font-size: 31px;
+        font-size: 1.8em;
         margin: 70px;
+    }
+
+    .ul-row3{
+        font-size: 1.6em;
     }
 
     .container-musics ul li{
