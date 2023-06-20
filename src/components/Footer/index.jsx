@@ -1,9 +1,6 @@
 import "./style.css";
 import FooterLogo from "assets/FooterLogo.png";
-import wpp from "assets/wpp-icon.png";
-import tw from "assets/tw-icon.png";
-import insta from "assets/insta-icon.png";
-import tt from "assets/tt-icon.png";
+import { SocialList } from "./SocialList";
 
 export default function Footer() {
   return (
@@ -13,23 +10,18 @@ export default function Footer() {
         <div className="social">
           <p>Acesse nossas redes:</p>
           <ul className="list-unstyled">
-            <li>
-              <img src={wpp} alt="whatsapp" />
-            </li>
-            <li>
-              <img src={tw} alt="twitch" />
-            </li>
-            <li>
-              <img src={insta} alt="instagram" />
-            </li>
-            <li>
-              <img src={tt} alt="twitter" />
-            </li>
+            {SocialList.map((li, index) => {
+              return (
+                <li key={index}>
+                  <img src={li.src} alt={li.alt} />
+                </li>
+              );
+            })}
           </ul>
         </div>
       </div>
       <div className="container-info">
-        <p>Desenvolvido por Alura. Projeto fictício sem fins comerciais.</p>
+        <p>Developed by Matheus</p>
       </div>
     </footer>
   );
