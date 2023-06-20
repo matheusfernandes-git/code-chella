@@ -37,7 +37,7 @@ export default function Form({ onAddClient }) {
         <h3>Preencha o formulário a seguir:</h3>
         <form onSubmit={whenSave}>
           <Input
-            label="Nome Completo:"
+            label="Nome:"
             type="text"
             value={name}
             whenChange={(value) => setName(value)}
@@ -61,9 +61,10 @@ export default function Form({ onAddClient }) {
             />
           </div>
           <div className="container-form-btn">
-            <Button type={"submit"} img={FormIcon}>
-              Avançar
-            </Button>
+            <button type="submit" className="btn">
+              Teste
+              <img src={FormIcon} />
+            </button>
           </div>
         </form>
       </section>

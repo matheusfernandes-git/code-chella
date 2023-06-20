@@ -9,6 +9,9 @@ import "./style.css";
 import InfoList from "./InfoList";
 
 export default function Ticket({ list }) {
+
+  console.log(list);
+
   return (
     <>
       <Banner src={TicketBanner} title={"Seu ingresso está aqui"} />
