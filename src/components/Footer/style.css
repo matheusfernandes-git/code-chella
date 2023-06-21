@@ -39,12 +39,6 @@ footer{
     height: 80px;
 }
 
-@media(max-width: 465px){
-    footer{
-        width: 175vw;
-    }
-}
-
 @media(max-width: 768px){
     footer{
         text-align: center;
