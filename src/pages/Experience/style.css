@@ -6,16 +6,16 @@
     padding: 64px 120px;
 }
 
-/* @media(max-width: 465px){
+@media(max-width: 400px){
     .container-sections{
-        width: 175vw;
+        width: 100%;
     }
-} */
+}
 
-@media(max-width: 768px){
+@media(min-width: 400px) and (max-width: 768px){
     .container-sections{
         margin-top: 40px;
-        padding: 0px 24px;
+        padding: 24px;
         height: 1073px;
     }
 }

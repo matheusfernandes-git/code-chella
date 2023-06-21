@@ -18,7 +18,7 @@
 }
 
 .container-text p{
-    width: 650px;
+    width: 630px;
     text-align: start;
     font-weight: 500;
     font-size: 20px;
@@ -45,14 +45,20 @@
     .container-content{
         margin: auto;
     }
-}
 
+    /* .container-text{
+        width: 90%;
+    }
+
+    .container-text p{
+        width: 100%;
+    } */
+}
 
 @media(max-width: 768px){
     .container-content{
         text-align: center;
         flex-direction: column;
-        height: 771vh;
     }
 
     .container-text p{

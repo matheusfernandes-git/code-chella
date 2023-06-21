@@ -3,6 +3,7 @@ import Banner from "components/Banner/index";
 import SetoresBanner from "assets/Setores/banner-setores.png";
 import map from "assets/Setores/mapa-setores1.png";
 import mobileMap from "assets/Setores/mobile/mapa-mobile.png";
+import tabletMap from "assets/Setores/mobile/tabletMap.png";
 import { SubtitleList } from "./subtitleList";
 import Details from "./details.json";
 import DetailsSections from "./DetailsSections";
@@ -15,6 +16,7 @@ export default function Sectors() {
         <div className="container-setores-content">
           <picture>
             <source srcSet={mobileMap} media="(max-width: 768px)" />
+            <source srcSet={tabletMap} media="(max-width: 1440px)" />
             <img src={map} alt="mapa de setores" />
           </picture>
           <div className="container-subtitle">

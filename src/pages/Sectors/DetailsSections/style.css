@@ -34,12 +34,12 @@
     gap: 24px;
     width: 383px;
 }
-
+/* 
 @media screen and (max-width: 340px){
     .container-details-content p{
         width: 340px;
     }   
-}
+} */
 
 @media(max-width: 768px){
     .container-details{
@@ -49,7 +49,16 @@
 
     .container-details-content{
         flex-direction: column;
-        height: 1719px;
+        height: 100vh;
+    }
+
+    .container-details-sections{
+        width: 100%;
+    }
+
+    .container-details-sections p{
+        width: 360px;
+        font-size: 1.3rem;
     }
 
     .container-details-content div{

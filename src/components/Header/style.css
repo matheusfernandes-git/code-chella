@@ -59,6 +59,15 @@ li a:hover::after{
     width: 100%;
 }
 
+@media(max-width: 400px){
+    header{
+        width: 110%;
+    }
+    .logo-link img{
+        width: 100%;
+    }
+}
+
 @media(max-width: 768px){
     header{
         padding: 32px 24px

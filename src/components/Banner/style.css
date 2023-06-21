@@ -21,6 +21,13 @@
     color: #444444;
 }
 
+
+@media(max-width: 400px){
+    .container-banner{
+        width: 110%;
+    }
+}
+
 @media(max-width: 768px){
     .container-banner{
         padding: 0px;

@@ -47,9 +47,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 48px 120px;
-    gap: 32px;
-    height: 806px;
+    padding-top: 70px;
+    gap: 70px;
+    height: 100vh;
 }
 
 .container-details h5{
@@ -70,8 +70,6 @@
     align-items: flex-start;
     padding: 0px;
     gap: 24px;
-    /* width: 1197px;
-    height: 631px; */
 }
 
 
@@ -97,7 +95,7 @@
 
     .container-subtitle h6{
         text-align: left;
-        font-size: 26px;
+        font-size: 1.7rem;
     }
 
     .container-subtitle ul{
@@ -125,7 +123,7 @@
 
 }
 
-@media(min-width: 768px) and (max-width: 1024px){
+@media(min-width: 768px) and (max-width: 1440px){
     .container-setores-content{
         flex-direction: column;
         justify-content: center;
@@ -141,7 +139,7 @@
 
     .container-details{
         padding: 32px 60px;
-        height: 1800px;
+        height: 100%;
     }
 
     .div-extra{
