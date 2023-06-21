@@ -7,8 +7,6 @@ import QrCodeBigger from "assets/Ticket/Qr code 1.png";
 import QrCodeMobile from "assets/Ticket/QrcodeMobile.png";
 import "./style.css";
 import InfoList from "./InfoList";
-import { useContext } from "react";
-import Form from "../Form";
 
 export default function Ticket({ list }) {
   console.log(list);
