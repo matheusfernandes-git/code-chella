@@ -60,9 +60,6 @@ li a:hover::after{
 }
 
 @media(max-width: 400px){
-    header{
-        width: 110%;
-    }
     .logo-link img{
         width: 100%;
     }
