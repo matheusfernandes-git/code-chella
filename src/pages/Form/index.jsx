@@ -2,14 +2,15 @@ import Banner from "components/Banner";
 import TicketBanner from "assets/Form/ingresso-banner.png";
 import "./style.css";
 import FormIcon from "assets/Form/form-icon.png";
-import Button from "components/Button";
 import Input from "components/Input";
 import DateInput from "components/inputDate/index";
 import DropdownTicket from "components/DropdownTicket";
-import { useState } from "react";
+import { createContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+const context = createContext();
 export default function Form({ onAddClient }) {
+  const [user, setUser] = useState([]);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [ticket, setTicket] = useState("");
@@ -33,41 +34,43 @@ export default function Form({ onAddClient }) {
   return (
     <section>
       <Banner src={TicketBanner} title={"Garanta seu Ingresso"} />
-      <section className="container-ticket-form">
-        <h3>Preencha o formulário a seguir:</h3>
-        <form onSubmit={whenSave}>
-          <Input
-            label="Nome:"
-            type="text"
-            value={name}
-            whenChange={(value) => setName(value)}
-          />
-          <Input
-            label="Email:"
-            type="email"
-            value={email}
-            whenChange={(value) => setEmail(value)}
-          />
-          <div className="container-smallers-inputs">
-            <DropdownTicket
-              label={"Tipo de ingresso"}
-              value={ticket}
-              whenChange={(value) => setTicket(value)}
+      <context.Provider value={{ name, ticket }}>
+        <section className="container-ticket-form">
+          <h3>Preencha o formulário a seguir:</h3>
+          <form onSubmit={whenSave}>
+            <Input
+              label="Nome:"
+              type="text"
+              value={name}
+              whenChange={(value) => setName(value)}
             />
-            <DateInput
-              label={"Data de nascimento:"}
-              value={birth}
-              whenChange={(value) => setBirth(value)}
+            <Input
+              label="Email:"
+              type="email"
+              value={email}
+              whenChange={(value) => setEmail(value)}
             />
-          </div>
-          <div className="container-form-btn">
-            <button type="submit" className="btn">
-              Teste
-              <img src={FormIcon} />
-            </button>
-          </div>
-        </form>
-      </section>
+            <div className="container-smallers-inputs">
+              <DropdownTicket
+                label={"Tipo de ingresso"}
+                value={ticket}
+                whenChange={(value) => setTicket(value)}
+              />
+              <DateInput
+                label={"Data de nascimento:"}
+                value={birth}
+                whenChange={(value) => setBirth(value)}
+              />
+            </div>
+            <div className="container-form-btn">
+              <button type="submit" className="btn">
+                Avançar
+                <img src={FormIcon} />
+              </button>
+            </div>
+          </form>
+        </section>
+      </context.Provider>
     </section>
   );
 }

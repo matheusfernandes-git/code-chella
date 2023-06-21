@@ -9,7 +9,6 @@ import Form from "./pages/Form/index";
 import Ticket from 'pages/Ticket/index';
 import { useState } from "react";
 
-
 export default function App() {
   const [list, setList] = useState([]);
 
