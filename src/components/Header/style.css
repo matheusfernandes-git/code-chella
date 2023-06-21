@@ -58,12 +58,12 @@ li a{
 li a:hover::after{
     width: 100%;
 }
-
+/* 
 @media(max-width: 465px){
     header{
         width: 175vw;
     }
-}
+} */
 
 @media(max-width: 768px){
     header{

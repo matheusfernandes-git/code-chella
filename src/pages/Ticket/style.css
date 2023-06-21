@@ -73,11 +73,11 @@
     line-height: 5px;
 }
 
-@media(max-width: 465px) {
+/* @media(max-width: 465px) {
     .container{
         width: 175vw;
     }
-}
+} */
 
 @media(max-width: 768px){
     .container{

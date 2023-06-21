@@ -75,12 +75,12 @@
 }
 
 
-@media screen and (max-width: 465px){
+/* @media screen and (max-width: 465px){
     .container-details,
     .container-map{
         width: 175vw;
     }
-}
+} */
 
 @media(max-width: 768px){
     .container-setores-content{

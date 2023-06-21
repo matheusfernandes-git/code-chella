@@ -21,11 +21,11 @@
     color: #444444;
 }
 
-@media(max-width: 465px){
+/* @media(max-width: 465px){
     .container-banner{
         width: 175vw;
     }
-}
+} */
 
 @media(max-width: 768px){
     .container-banner{
