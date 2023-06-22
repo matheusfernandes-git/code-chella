@@ -23,7 +23,7 @@
 
 @media(max-width: 400px){
     .container-banner{
-     
+        display: none;
         padding: 0px;
     }
 
