@@ -70,13 +70,6 @@
     color: #444444;
 }
 
-/* @media(max-width: 465px){
-    .container-about,
-    .container-party{
-        width: 175vw;
-    }
-} */
-
 @media (max-width: 465px){
     .container-about{
         padding: 32px 24px;
