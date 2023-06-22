@@ -57,7 +57,9 @@ hr{
     color: #444444;
 }
 
-.ul-row1, .ul-row2, .ul-row3{
+.ul-row1,
+.ul-row2,
+.ul-row3{
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -68,7 +70,8 @@ hr{
     color: #444444;
 }
 
-.ul-row2, .ul-row3{
+.ul-row2,
+.ul-row3{
     font-size: 32px;
     line-height: 38px;
 }

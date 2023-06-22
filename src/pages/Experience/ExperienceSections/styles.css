@@ -16,20 +16,16 @@
 .container-text h6{
     display: flex;
     font-weight: 700;
-    color: #444;
     font-size: 32px;
-    font-family: 'Raleway';
     font-weight: 700;
 }
 
 .container-text p{
-    font-family: 'Raleway';
     width: 630px;
     text-align: start;
     font-weight: 500;
     font-size: 20px;
     line-height: 40px;
-    color: #444444;
 }
 
 .sustentability-img{
@@ -48,10 +44,6 @@
 }
 
 @media(max-width: 355px){
-    /* .container-content{
-        margin: auto;
-    } */
-
     .container-section-content{
         width: 100%;
         text-align: center;

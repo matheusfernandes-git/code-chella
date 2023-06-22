@@ -31,7 +31,6 @@
 }
 
 .container-content h6{
-    font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -43,12 +42,10 @@
 }
 
 .container-content p{
-    font-family: 'Raleway';
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 40px;
-    color: #444444;
 }
 
 .container-lineUp{
@@ -62,12 +59,9 @@
 
 .container-lineUp h1{
     text-align: center;
-    font-family: 'Calistoga';
-    font-style: normal;
     font-weight: 400;
     font-size: 64px;
     line-height: 83px;
-    color: #444444;
 }
 
 @media (max-width: 465px){

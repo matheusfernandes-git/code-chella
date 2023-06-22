@@ -13,7 +13,6 @@
     align-items: center;
     padding: 0px;
     gap: 48px;
-    /* height: 609px;  */
 }
 
 .container-subtitle{
@@ -26,12 +25,10 @@
 
 .container-subtitle h6{
     text-align: center;
-    font-family: 'Raleway';
     font-size: 32px;
     line-height: 38px;
     font-style: normal;
     font-weight: 700;
-    color: #444444;
 }
 
 .container-subtitle ul{
@@ -53,7 +50,6 @@
 }
 
 .container-details h5{
-    font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -61,7 +57,6 @@
     display: flex;
     align-items: center;
     text-align: center;
-    color: #444444;
 }
 
 .container-details-content{
@@ -71,14 +66,6 @@
     padding: 0px;
     gap: 24px;
 }
-
-
-/* @media screen and (max-width: 465px){
-    .container-details,
-    .container-map{
-        width: 175vw;
-    }
-} */
 
 @media(max-width: 768px){
     .container-setores-content{

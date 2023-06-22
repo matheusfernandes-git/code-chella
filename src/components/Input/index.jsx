@@ -7,7 +7,7 @@ export default function Input(props) {
 
   return (
     <div className="fild">
-      <label>{props.label}</label>
+      <label className="">{props.label}</label>
       <input
         type={props.type}
         value={props.value}

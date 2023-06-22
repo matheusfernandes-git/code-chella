@@ -1,4 +1,3 @@
-import "./style.css";
 import ExperienceSection from "./ExperienceSections";
 import ExpericenceJson from "./ExperienceSections/experience.json";
 import Banner from "components/Banner/index";
@@ -10,7 +9,7 @@ export default function Experience() {
       <Banner src={bannerImg} title={"A Experiência"} />
       {ExpericenceJson.map((experience, index) => {
         return (
-          <section className="container-sections">
+          <section className="w-100 d-flex flex-column justify-content-center align-items-center p-5 mt-sm-4 p-sm-5 h-sm-100">
             <ExperienceSection
               key={index}
               id={experience.id}

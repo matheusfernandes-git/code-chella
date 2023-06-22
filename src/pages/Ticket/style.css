@@ -8,14 +8,12 @@
 }
 
 .container-ticket h6{
-    font-family: 'Raleway';
     font-weight: 700;
     font-size: 32px;
     line-height: 38px;
     display: flex;
     align-items: center;
     text-align: center;
-    color: #444444;
 }
 
 .container-ticket{
@@ -72,12 +70,6 @@
     font-size: 20px;
     line-height: 5px;
 }
-
-/* @media(max-width: 465px) {
-    .container{
-        width: 175vw;
-    }
-} */
 
 @media(max-width: 768px){
     .container{

@@ -3,7 +3,7 @@
     flex-direction: column;
     padding: 0px;
     gap: 8px;
-}
+} 
 
 label{
     font-family: 'Raleway';
@@ -38,12 +38,6 @@ input{
 }
 
 @media(min-width: 768px) and (max-width: 1440px){
-    .fild{
-        align-items: flex-start;
-        /* width: 648px;
-        height: 94px; */
-    }
-
     input{
         width: 648px;
         height: 48px;

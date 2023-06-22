@@ -10,7 +10,6 @@ import { useNavigate } from "react-router-dom";
 
 const context = createContext();
 export default function Form({ onAddClient }) {
-  const [user, setUser] = useState([]);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [ticket, setTicket] = useState("");
