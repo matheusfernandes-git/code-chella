@@ -115,7 +115,6 @@ li a:hover::after{
     }
     
     .menu-itens li{
-        display: flex;
         margin-top: 50px;
     }
 
