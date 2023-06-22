@@ -8,7 +8,7 @@ export default function ExperienceSection({
   imgSust,
 }) {
   return (
-    <div className="container-content">
+    <div className="container-section-content">
       <picture className={imgSust}>
         <source
           srcSet={`/assets/ExperienceSections/${id}/mobile.png`}

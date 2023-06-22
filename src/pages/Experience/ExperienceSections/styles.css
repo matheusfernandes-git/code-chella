@@ -1,4 +1,4 @@
-.container-content{
+.container-section-content{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,14 +10,20 @@
     justify-content: center;
     flex-direction: column;
     gap: 24px;
+    padding: 20px;
 }
 
 .container-text h6{
     display: flex;
     font-weight: 700;
+    color: #444;
+    font-size: 32px;
+    font-family: 'Raleway';
+    font-weight: 700;
 }
 
 .container-text p{
+    font-family: 'Raleway';
     width: 630px;
     text-align: start;
     font-weight: 500;
@@ -41,22 +47,44 @@
     text-align: right;
 }
 
-@media(max-width: 400px){
-    .container-content{
+@media(max-width: 355px){
+    /* .container-content{
         margin: auto;
+    } */
+
+    .container-section-content{
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
     }
 
-    /* .container-text{
-        width: 90%;
+    .container-section-content img{
+        width: 100%;
     }
 
     .container-text p{
         width: 100%;
-    } */
+        text-align: center;
+    }
+
+    .sustentability-img{
+        margin-top: 60px;
+        order: 0;
+    }
+
+    #container-sustentability{
+        align-items: center;
+        justify-content: center;
+        order: 1;
+    }
+    
+    #container-sustentability p{
+        text-align: center;
+    }
 }
 
-@media(max-width: 768px){
-    .container-content{
+@media(min-width: 355px) and (max-width: 768px){
+    .container-section-content{
         text-align: center;
         flex-direction: column;
     }
@@ -83,7 +111,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 1440px){
-    .container-content{
+    .container-section-content{
         justify-content: space-between;
         flex-direction: column;
         gap: 32px;

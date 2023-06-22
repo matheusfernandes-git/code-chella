@@ -26,7 +26,7 @@ export default function Home() {
                 srcSet={mobileImg}
                 media="(max-width: 768px)"
               />
-              <img className="about-img" src={AboutImg} alt="imagem" />
+              <img src={AboutImg} alt="imagem" />
             </picture>
             <div className="container-about-text">
               <h6>11 e 12 de Março Aluródromo de São Paulo</h6>
