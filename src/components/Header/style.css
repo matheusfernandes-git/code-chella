@@ -27,7 +27,8 @@ ul{
     gap: 32px;
 }
 
-ul .links{
+.links{
+    position: relative;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -37,11 +38,7 @@ ul .links{
     color: #fff;
 }
 
-li a{
-    position: relative;
-}
-
-.li-links a::after{
+.links::after{
     content: '';
     width: 0%;
     height: 1px;
@@ -54,10 +51,9 @@ li a{
     transition: 0.3s ease-in-out;
 }
 
-li a:hover::after{
+.links:hover::after{
     width: 100%;
 }
-
 
 @media(max-width: 768px){
     header{
@@ -108,11 +104,14 @@ li a:hover::after{
         margin-right: 20px;
         cursor: pointer;
     }
-    
-    .links{
+
+    .li-links{
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .links{
         margin-right: 20px;
     }
     
@@ -120,10 +119,10 @@ li a:hover::after{
         margin-top: 50px;
     }
 
-    li a::after{
+    .li-links .links::after{
         margin-top: 15px;
     }
-
+    
 }
 
 @media(min-width: 768px) and (max-width: 1440px){

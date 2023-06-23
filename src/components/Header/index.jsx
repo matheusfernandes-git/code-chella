@@ -29,8 +29,8 @@ export default function Header() {
           </li>
           {Links.map((link, index) => {
             return (
-              <li className="li-links" key={link.id}>
-                <Link key={index} className="links" to={link.to}>
+              <li className="li-links" key={index}>
+                <Link className="links" to={link.to}>
                   {link.name}
                 </Link>
               </li>

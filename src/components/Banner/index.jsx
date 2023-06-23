@@ -10,7 +10,12 @@ export default function Banner({ src, title }) {
         backgroundSize: "cover",
       }}
     >
-      <h1 className="d-flex justify-content-center align-items-center w-100 lh-sm" style={{ height: '40vh' }}>{title}</h1>
+      <h1
+        className="d-flex justify-content-center align-items-center w-100 lh-sm"
+        style={{ height: "40vh" }}
+      >
+        {title}
+      </h1>
     </div>
   );
 }
