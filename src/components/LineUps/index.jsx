@@ -2,18 +2,16 @@ import "./style.css";
 
 export default function LineUps({ day, title, row1, row2, row3 }) {
   return (
-    <section className="container-line-up">
-      <div className="container-data">
+    <section className="d-flex w-100 flex-column justify-content-center align-items-center p-5 gap-5">
+      <div className="d-flex flex-row justify-content-center align-items-center gap-3">
         <hr />
-        <div className="data">
+        <div className="data d-flex align-items-start p-3 gap-2">
           <h3>{day}</h3>
         </div>
         <hr />
       </div>
-      <div className="container-musics">
-        <div className="container-music-title">
-          <h2>{title}</h2>
-        </div>
+      <div className="container-musics d-flex flex-column justify-content-center align-items-center gap-3">
+        <h2 className="text-center">{title}</h2>
         <ul className="ul-row1">
           {row1.map((musics, index) => {
             return <li key={index}>{musics.name}</li>;

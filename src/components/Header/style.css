@@ -72,7 +72,7 @@ li a:hover::after{
         display: flex;
         flex-direction: column;
         z-index: 1000;
-        position: fixed ; 
+        position: fixed; 
         width: 100%;
         top: 0;
         left: 100%;
@@ -94,6 +94,7 @@ li a:hover::after{
         display: flex;
         flex-direction: column;
         position: fixed;
+        margin-right: 100px;
         top: 0;
         width: 100%;
         height: 600vh;     
@@ -107,11 +108,12 @@ li a:hover::after{
         margin-right: 20px;
         cursor: pointer;
     }
-
-    .li-links{
+    
+    .links{
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-right: 20px;
     }
     
     .menu-itens li{

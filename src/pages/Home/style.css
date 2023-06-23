@@ -1,69 +1,56 @@
-.container-about{
+/* .container-about{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 64px 120px;
-}
+} */
 
 .container-content{
-    display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 48px;
-}
+} 
 
-.container-about-text{
+/* .container-about-text{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 24px;
-}
+}  */
 
 .container-about-text h6{
     width: 392px;
 }
 
 .container-about-text p{
-    text-align: center;
     width: 540px
 }
 
 .container-content h6{
-    font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 38px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #444444;
 }
 
 .container-content p{
-    font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 40px;
 }
 
-.container-lineUp{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 32px 120px;
-    gap: 32px;
-}
-
 .container-lineUp h1{
-    text-align: center;
     font-size: 64px;
     line-height: 83px;
 }
 
-@media (max-width: 465px){
+.container-party{
+    background-image: url('../../assets/Home/party-img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    mix-blend-mode: multiply;
+}
+
+/* @media (max-width: 400px){
     .container-about{
         padding: 32px 24px;
         margin: auto; 
@@ -90,28 +77,20 @@
     .container-party{
         display: none;
     }
-}
+} */
 
-@media(min-width: 465px) and (max-width: 768px) {
+@media(max-width: 768px) {
     .container-banner{
         height: 270px;
     }
 
     .container-banner h1{
-        padding: 27px 200px;
         font-size: 32px;
         line-height: 42px;
     }
 
-    .container-about{
-        flex-direction: column;
-        justify-content: center;
-        padding: 32px 24px; 
-    }
-
     .container-content{
         flex-direction: column;
-        gap: 32px;
         margin-top: 40px;
         margin-bottom: 80px;
     }
@@ -123,13 +102,12 @@
     .container-lineUp h1{
         font-size: 48px;
         line-height: 62px;
-        width: 223px;
     } 
-
 }
 
 @media(min-width: 768px) and (max-width: 1440px){
-    .container-content{
+       .container-content{
+        align-items: center;
         flex-direction: column;
         gap: 32px;
     }

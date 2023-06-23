@@ -17,9 +17,9 @@ export default function Home() {
   return (
     <>
       <Banner src={BannerImg} title={"Boas-vindas ao #CodeChella2023!"} />
-      <section className="container-about">
+      <section className="container-about d-flex flex-column justify-content-center align-items-center p-5">
         <section className="container mt-3 mb-3">
-          <div className="container-content">
+          <div className="container-content d-flex  justify-content-center align-itens-center gap-5 ">
             <picture>
               <source
                 className="mobile-img"
@@ -28,9 +28,9 @@ export default function Home() {
               />
               <img src={AboutImg} alt="imagem" />
             </picture>
-            <div className="container-about-text">
-              <h6>11 e 12 de Março Aluródromo de São Paulo</h6>
-              <p>
+            <div className="container-about-text d-flex flex-column align-items-center mt-2 gap-4">
+              <h6 className="text-center">11 e 12 de Março Aluródromo de São Paulo</h6>
+              <p className="text-center">
                 Hora de programar nossa memória com novas lembranças! Uma nova
                 experiência sobre música, linguagens e, claro, tecnologia! Somos
                 um festival diverso, com vários artistas e referências.
@@ -44,8 +44,8 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <div className="container-lineUp">
-          <h1>/Line-Up/</h1>
+        <div className="container-lineUp d-flex flex-column justify-content-center align-items-center gap-5 p-5">
+          <h1 className="text-center mt-3">/Line-Up/</h1>
         </div>
         <LineUps
           day={"<SABADO 11/06>"}
