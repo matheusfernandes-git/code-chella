@@ -31,9 +31,14 @@ hr{
     color: #444;
 }
 
+.container-musics li{
+    margin: 10px;
+}
+
 .ul-row1,
 .ul-row2,
 .ul-row3{
+    display: flex;
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 40px;
@@ -97,6 +102,10 @@ hr{
         width: 105%;
         height: 157px;
         padding-right: 18px;
+    }
+    
+    .container-musics li{
+        margin: 0px;
     }
 
     .ul-row1{
