@@ -2,7 +2,7 @@ import "./style.css";
 
 export default function DropdownTicket(props) {
   return (
-    <div className="container-dropdown">
+    <div className="container-dropdown d-flex flex-column gap-2">
       <label>{props.label}</label>
       <select
         required

@@ -6,8 +6,8 @@ export default function Input(props) {
   };
 
   return (
-    <div className="fild">
-      <label className="">{props.label}</label>
+    <div className="d-flex flex-column gap-4">
+      <label>{props.label}</label>
       <input
         type={props.type}
         value={props.value}

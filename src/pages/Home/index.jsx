@@ -19,7 +19,7 @@ export default function Home() {
       <Banner src={BannerImg} title={"Boas-vindas ao #CodeChella2023!"} />
       <section className="container-about d-flex flex-column justify-content-center align-items-center p-5">
         <section className="container mt-3 mb-3">
-          <div className="container-content d-flex  justify-content-center align-itens-center gap-5 ">
+          <div className="container-content d-flex justify-content-center align-itens-center gap-5 ">
             <picture>
               <source
                 className="mobile-img"

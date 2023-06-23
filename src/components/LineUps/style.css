@@ -51,26 +51,15 @@ hr{
     font-weight: 500;
 }
 
-/* @media(min-width: 767px) and (max-width: 768px){
-    .container-line-up{
-        padding: 48px 60px;
+/* @media(min-width: 768px) and (max-width: 769px){
+    .container-musics ul{
+        width: 200px;
     }
-
-    .container-musics{
-        width: 650px;
-    }
-
-    .container-musics ul {  
-        width: 500px;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .ul-row1{
-        font-size: 39px;
-        line-height: 47px;
+    .container-musics ul li{
+        width: 100%;
     }
 } */
+
 
 @media(max-width: 768px){
     hr{
@@ -127,7 +116,7 @@ hr{
     .container-musics ul li{
         text-align: center;
     }
-}
+} 
 
 @media(min-width: 768px) and (max-width: 1440px){
     hr{

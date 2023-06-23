@@ -22,7 +22,7 @@ nav{
     display: none;
 }
 
-ul{
+.menu-itens{
     display: flex;
     gap: 32px;
 }
@@ -55,7 +55,8 @@ ul{
     width: 100%;
 }
 
-@media(max-width: 768px){
+
+@media(max-width: 767px){
     header{
         padding: 32px 24px
     }
@@ -123,6 +124,21 @@ ul{
         margin-top: 15px;
     }
     
+}
+
+@media(min-width: 768px) and (max-width: 769px){
+    .open-menu{
+        display: none;
+    }
+    
+    .close-menu{
+        display: none;
+    }
+    
+    .menu-itens{
+        display: flex;
+        gap: 32px;
+    }
 }
 
 @media(min-width: 768px) and (max-width: 1440px){

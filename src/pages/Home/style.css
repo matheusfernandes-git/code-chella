@@ -50,35 +50,6 @@
     mix-blend-mode: multiply;
 }
 
-/* @media (max-width: 400px){
-    .container-about{
-        padding: 32px 24px;
-        margin: auto; 
-        width: 470px;
-    }
-
-    .container-content{
-        flex-direction: column;
-        gap: 32px;
-        margin-top: 40px;
-        margin-bottom: 80px;
-    }
-
-    .container-about-text h6, .container-about-text p{
-        width: 312px;
-    }
-
-    .container-lineUp h1{
-        font-size: 48px;
-        line-height: 62px;
-        width: 223px;
-    } 
-
-    .container-party{
-        display: none;
-    }
-} */
-
 @media(max-width: 768px) {
     .container-banner{
         height: 270px;

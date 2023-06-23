@@ -35,7 +35,7 @@ export default function Form({ onAddClient }) {
       <Banner src={TicketBanner} title={"Garanta seu Ingresso"} />
       <context.Provider value={{ name, ticket }}>
         <section className="container-ticket-form">
-          <h3>Preencha o formulário a seguir:</h3>
+          <h3 className="text-center">Preencha o formulário a seguir:</h3>
           <form onSubmit={whenSave}>
             <Input
               label="Nome:"
