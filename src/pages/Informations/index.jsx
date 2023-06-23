@@ -9,7 +9,7 @@ export default function Informations() {
     <section>
       <Banner src={InfoBanner} title={"Informações Gerais"} />
       <section className="d-flex flex-column align-items-center gap-5 p-5">
-        <h3>Perguntas Frequentes:</h3>
+        <h3 className="text-center">Perguntas Frequentes:</h3>
         <div className="d-flex flex-column align-items-start gap-3">
           {contentQuestions.map((question, index) => {
             return (
