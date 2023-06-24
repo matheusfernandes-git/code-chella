@@ -56,16 +56,6 @@ hr{
     font-weight: 500;
 }
 
-/* @media(min-width: 768px) and (max-width: 769px){
-    .container-musics ul{
-        width: 200px;
-    }
-    .container-musics ul li{
-        width: 100%;
-    }
-} */
-
-
 @media(max-width: 768px){
     hr{
         display: none;
