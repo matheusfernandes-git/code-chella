@@ -1,21 +1,7 @@
-/* .container-about{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 64px 120px;
-} */
-
 .container-content{
     flex-direction: row;
 } 
 
-/* .container-about-text{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
-}  */
 
 .container-about-text h6{
     width: 392px;
@@ -35,6 +21,36 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 40px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 16px;
+    width: 256px;
+    height: 56px;
+    background: #2E7BA2;
+    box-shadow: 4px 4px 0px #444444;
+    text-decoration: none;
+    border-radius: 16px;
+}
+
+.btn:hover{
+    color: #fff;
+    background: #519EC5;
+    box-shadow: 4px 4px 0px #000000;
+}
+
+button .link{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 40px;
+    color: #fff;
+    text-decoration: none;
 }
 
 .container-lineUp h1{

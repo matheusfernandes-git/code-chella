@@ -11,7 +11,7 @@ import { row3 } from "./lineUpSaturdayRow3";
 import { sundayRow1 } from "./lineUpSundayRow1";
 import { sundayRow2 } from "./lineUpSundayRow2";
 import { sundayRow3 } from "./lineUpSundayRow3";
-import Button from "components/Button";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -29,7 +29,9 @@ export default function Home() {
               <img src={AboutImg} alt="imagem" />
             </picture>
             <div className="container-about-text d-flex flex-column align-items-center mt-2 gap-4">
-              <h6 className="text-center">11 e 12 de Março Aluródromo de São Paulo</h6>
+              <h6 className="text-center">
+                11 e 12 de Março Aluródromo de São Paulo
+              </h6>
               <p className="text-center">
                 Hora de programar nossa memória com novas lembranças! Uma nova
                 experiência sobre música, linguagens e, claro, tecnologia! Somos
@@ -37,9 +39,11 @@ export default function Home() {
                 Divirta-se!
               </p>
               <div className="container-button">
-                <Button to={"/formulario"} img={TicketIcon}>
-                  Comprar ingresso
-                </Button>
+                <button className="btn">
+                  <Link to={"/formulario"} className="link">
+                    Comprar ingresso <img src={TicketIcon} />
+                  </Link>
+                </button>
               </div>
             </div>
           </div>
