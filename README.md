@@ -1,16 +1,26 @@
-# Getting Started with Create React App
+# CodeChella
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In this project i completed a challenge proposed by an online course platform, called Alura. This project consist of a website about a technological music festival, called CodeChella.
 
-## Available Scripts
+<h2>CodeChella parts:</h2>
+<ul>
+    <li>Home - initial part with the names of the songs.
+    <li>Experience - a little about the experience that the public will have.
+    <li>Map of sectors - a festival map.
+    <li>Informations - the most frequently asked questions about the festival.
+    <li>Tickets - here you fill out a form and is redirected to another page with your ticket to the festival.
+</ul>
 
-In the project directory, you can run:
+<h2>Tecnologies used:</h2>
+<table>
+  <tr>
+    <td>ReactJs</td>
+    <td>HTML</td>
+    <td>CSS</td>
+    <td>Bootstrap</td>
+   </tr>
+</table>
 
-### `npm start`
+So, if you're interested, check it out! 🙂
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
+https://code-chella-kappa.vercel.app/
