@@ -1,4 +1,5 @@
 import "./style.css";
+import { Options } from "./options";
 
 export default function DropdownTicket(props) {
   return (
@@ -9,10 +10,9 @@ export default function DropdownTicket(props) {
         value={props.value}
         onChange={(event) => props.whenChange(event.target.value)}
       >
-        <option value=""></option>
-        <option>Ingresso Cortesia</option>
-        <option>Ingresso Pista</option>
-        <option>Ingresso Premium</option>
+        {Options.map((opt, index) => {
+          return <option key={index}>{opt.content}</option>;
+        })}
       </select>
     </div>
   );

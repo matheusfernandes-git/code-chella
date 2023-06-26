@@ -31,10 +31,8 @@ export default function Ticket({ list }) {
                 <source srcSet={QrCodeBigger} media="(max-width: 1440px)" />
                 <img src={QrCode} alt="qrcode do ingresso" />
               </picture>
-              <div className="container-ticket-infos">
-                <div className="infos">
-                  <InfoList name={list.name} ticket={list.ticket} />
-                </div>
+              <div className="infos">
+                <InfoList name={list.name} ticket={list.ticket} />
               </div>
             </div>
           </div>
