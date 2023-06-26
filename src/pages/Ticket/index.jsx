@@ -33,15 +33,7 @@ export default function Ticket({ list }) {
               </picture>
               <div className="container-ticket-infos">
                 <div className="infos">
-                  {list.map((client, index) => {
-                    return (
-                      <InfoList
-                        key={index}
-                        name={client.name}
-                        ticket={client.ticket}
-                      />
-                    );
-                  })}
+                  <InfoList name={list.name} ticket={list.ticket} />
                 </div>
               </div>
             </div>

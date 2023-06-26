@@ -10,11 +10,11 @@ import Ticket from "pages/Ticket/index";
 import { useState } from "react";
 
 export default function App() {
-  const [list, setList] = useState([]);
+  const [list, setList] = useState({});
 
   function handleClient(client) {
-    let newList = [...list];
-    newList.push(client);
+    let newList = {...list};
+    newList = client
     setList(newList);
   }
 
