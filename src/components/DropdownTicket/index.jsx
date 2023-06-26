@@ -9,6 +9,7 @@ export default function DropdownTicket(props) {
         value={props.value}
         onChange={(event) => props.whenChange(event.target.value)}
       >
+        <option value=""></option>
         <option>Ingresso Cortesia</option>
         <option>Ingresso Pista</option>
         <option>Ingresso Premium</option>
