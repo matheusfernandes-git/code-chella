@@ -1,3 +1,5 @@
+![Screenshot 2023-06-26 202808](https://github.com/matheusfernandes-git/code-chella/assets/100592742/88d18af2-6066-4529-8799-4525a4b72a76)
+
 # CodeChella
 
 In this project i completed a challenge proposed by an online course platform, called Alura. This project consist of a website about a technological music festival, called CodeChella.
