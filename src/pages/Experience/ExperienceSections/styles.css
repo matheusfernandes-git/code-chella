@@ -6,18 +6,16 @@
 
 .container-text{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     flex-direction: column;
     gap: 24px;
     padding: 20px;
 }
 
 .container-text h6{
-    display: flex;
     font-weight: 700;
     font-size: 32px;
-    font-weight: 700;
 }
 
 .container-text p{
@@ -54,6 +52,11 @@
         width: 100%;
     }
 
+    .container-text{
+        align-items: center;
+        justify-content: center;
+    }
+
     .container-text p{
         width: 100%;
         text-align: center;
@@ -79,6 +82,11 @@
     .container-section-content{
         text-align: center;
         flex-direction: column;
+    }
+
+    .container-text{
+        align-items: center;
+        justify-content: center;
     }
 
     .container-text p{
@@ -110,6 +118,8 @@
     }
     
     .container-text{
+        align-items: center;
+        justify-content: center;
         text-align: center;
     }
 
